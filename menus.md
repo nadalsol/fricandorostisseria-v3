@@ -4,7 +4,7 @@ title: "Menús"
 permalink: /menus/
 ---
 
-<h1>Menús y platos especiales</h1>
+<h1>Menús y platos por encargo</h1>
 <div>
   {% for menu in site.menus %}
     <p>
