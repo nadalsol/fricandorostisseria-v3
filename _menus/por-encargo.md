@@ -1,7 +1,9 @@
 ---
 layout: menu
-title:  "Por encargo"
+title: Por encargo
+price: 
 ---
+
 * Conejo a l'ast con guarnición: **13.50€**
 * Cochinillo asado con guarnición: **100/120€**
 * Pierna de cordero con guarnición: **28.00€**

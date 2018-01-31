@@ -1,8 +1,9 @@
 ---
 layout: menu
-title:  "Menú familiar"
-price:  39.00
+title: Menú familiar
+price: 39.0
 ---
+
 * 2 Pollos a l'ast
 * 2 Raciones de patatas "al caliu"
 * 2 Raciones de canelones caseros (12 unidades)
