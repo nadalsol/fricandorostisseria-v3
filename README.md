@@ -88,9 +88,15 @@ Now make sure that the files in the Jekyll project have been replaced.
 
 ## Resources
 
-* [DatoCMS with Jekyll: A beginner's guide (tutorial)](https://www.datocms.com/blog/datocms-with-jekyll-a-beginners-guide/).
-* [DatoCMS documentation: Integrating with Jekyll](https://docs.datocms.com/jekyll/overview.html).
-* [DatoCMS documentation: Deploy your website to Netlify](https://docs.datocms.com/deployment/netlify.html).
+Documentation and tutorials:
+
+* [DatoCMS: How it works](https://www.datocms.com/how-it-works/)
+* [DatoCMS with Jekyll: A beginner's guide (tutorial)](https://www.datocms.com/blog/datocms-with-jekyll-a-beginners-guide/)
+* [DatoCMS documentation: Integrating with Jekyll](https://docs.datocms.com/jekyll/overview.html)
+* [DatoCMS documentation: Deploy your website to Netlify](https://docs.datocms.com/deployment/netlify.html)
+
+Dashboards:
+
 * [Netlify dashboard](https://app.netlify.com/).
 * [DatoCMS dashboard](https://dashboard.datocms.com/)
 
