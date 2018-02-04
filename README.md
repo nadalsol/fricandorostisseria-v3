@@ -1,0 +1,122 @@
+# Fricandó Rostisseria
+
+1. [Introduction](#introduction)
+2. [Install](#install)
+3. [Deploy](#deploy)
+4. [Use DatoCMS to publish content](#use-datocms-to-publish-content)
+5. [Manage DatoCMS records](#manage-datocms-records)
+6. [Resources](#resources)
+7. [Authors](#authors)
+
+## Introduction
+
+**Fricandó Rostisseria** is a handmade / to take away food shop located in Badalona (Barcelona). The site has been created using [Jekyll](https://jekyllrb.com/), [GitHub](https://github.com/), [Netlify](https://www.netlify.com/) and [DatoCMS](https://www.datocms.com/).
+
+* **Jekyll** is a simple, blog-aware, static site generator.
+* **GitHub** is a development platform where you can host and review code.
+* **Netlify** is a platform to deploy modern static websites with an automated process.
+* **DatoCMS** is an API-based administrative area for your static websites, to let your clients publish new content independently.
+
+## Install
+
+First install [Ruby](https://www.ruby-lang.org/) and [RubyGems](https://rubygems.org/).
+
+Then you can install Jekyll with the following command:
+
+```
+$ gem install jekyll bundler
+```
+
+Clone GitHub repo:
+
+```
+$ git clone git@github.com:yourusername/yoursitename.git
+```
+
+Change into your new directory:
+
+```
+$ cd yoursitename
+```
+
+Build the site on the preview server:
+
+```
+$ bundle exec jekyll server
+```
+
+Now browse to http://localhost:4000
+
+## Deploy
+
+We linked the Netlify site to the GitHub repo to allow an automated deploy on every commit.
+
+Now, everytime you push some change to GitHub, Netlify will repeat the build process and deploy a new version of the site, to your custom domain:
+
+http://www.yoursitename.com/
+
+## Use DatoCMS to publish content
+
+The deploy process described above can be fine, but it certainly cannot be done if the person in charge of updating catalog is not a programmer and or is not comfortable with terminal.
+
+To solve this issue, just access your DatoCMS administrative area to populate your content:
+
+https://yoursitename.admin.datocms.com/
+
+## Manage DatoCMS records
+
+If you want to get rid of the Markdown files in the Jekyll project and integrate the data from DatoCMS instead, just use the [dato gem](https://github.com/datocms/ruby-datocms-client/). This gem let's you programmatically read/create/edit/destroy DatoCMS records.
+
+Assuming `gem "dato"` has already been added to your `Gemfile`, install the [dato gem](https://github.com/datocms/ruby-datocms-client/):
+
+```
+$ bundle install
+```
+
+Assuming there's a `dato.config.rb` file into your project root directory, to fetch the data from DatoCMS, you should dump all the remote data into local files. That would replace the ones in the Jekyll project:
+
+```
+$ bundle exec dato dump --token=SITE_READONLY_TOKEN
+
+// replace the `SITE_READ_ONLY_TOKEN` string with the actual token
+// (you can find it your DatoCMS Admin area)
+```
+
+Now make sure that the files in the Jekyll project have been replaced.
+
+**BE CAREFUL!** This script will delete all the files in the specified directories.
+
+## Resources
+
+* [DatoCMS with Jekyll: A beginner's guide (tutorial)](https://www.datocms.com/blog/datocms-with-jekyll-a-beginners-guide/).
+* [DatoCMS documentation: Integrating with Jekyll](https://docs.datocms.com/jekyll/overview.html).
+* [DatoCMS documentation: Deploy your website to Netlify](https://docs.datocms.com/deployment/netlify.html).
+* [Netlify dashboard](https://app.netlify.com/).
+* [DatoCMS dashboard](https://dashboard.datocms.com/)
+
+## Authors
+
+This project has been designed and developed by 🐧 [Mr. Puffin](http://mrpuffin.cat/), a communication studio based in Vilassar de Mar, Barcelona (Catalunya).
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <img width="150" height="150" src="https://github.com/nadalsol.png?s=150">
+        <br>
+        <a href="https://github.com/nadalsol">Nadal Soler</a>
+        <p>@nadalsol</p>
+        <br>
+        <p>Front-end Web Developer</p>
+      </td>
+      <td align="center" valign="top">
+        <img width="150" height="150" src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_150_150/p/4/005/06b/33f/3a3caff.jpg">
+        <br>
+        <a href="https://www.linkedin.com/in/miriamsoto/">Miriam Soto</a>
+        <p>@coolcolors</p>
+        <br>
+        <p>Senior UI & Visual Designer / Creative Director</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
