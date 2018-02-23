@@ -1,0 +1,20 @@
+<ul class="social-media-list">
+  <li>
+    <a href="https://www.facebook.com/FricandoRostisseria/" target="_blank">
+      <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg>
+    </a>
+  </li>
+  <li>
+    <a href="https://instagram.com/fricando_" target="_blank">
+      <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg>
+    </a>
+  </li>
+  {% if site.rss %}
+  <li>
+    <a href="{{ 'feed.xml' | relative_url }}">
+      <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg>
+      <span>{{ site.rss | escape }}</span>
+    </a>
+  </li>
+  {% endif %}
+</ul>
