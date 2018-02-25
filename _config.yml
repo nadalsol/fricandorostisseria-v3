@@ -44,6 +44,15 @@ plugins:
 
 # Collections
 collections:
-  menus:
+  comidas:
     output: true
-    permalink: /menus/:path/
+    permalink: /comidas/:path/
+  cenas:
+    output: true
+    permalink: /cenas/:path/
+  bebidas:
+    output: true
+    permalink: /bebidas/:path/
+  encargos:
+    output: true
+    permalink: /encargos/:path/
