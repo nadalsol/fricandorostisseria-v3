@@ -106,10 +106,7 @@ $ bundle install
 Assuming there's a `dato.config.rb` file into your project root directory, to fetch the data from DatoCMS, you should dump all the remote data into local files. That would replace the ones in the Jekyll project:
 
 ```
-$ bundle exec dato dump --token=SITE_READONLY_TOKEN
-
-// replace the `SITE_READ_ONLY_TOKEN` string with the actual token
-// (you can find it your DatoCMS Admin area)
+$ bundle exec dato dump --token=SITE_READONLY_TOKEN // replace the `SITE_READ_ONLY_TOKEN` string with the actual token (you can find it your DatoCMS Admin area)
 ```
 
 Now make sure that the files in the Jekyll project have been replaced.
@@ -133,7 +130,7 @@ Dashboards:
 
 ## Authors
 
-This project has been designed and developed by 🐧 [Mr. Puffin](http://mrpuffin.cat/), a communication studio based in Vilassar de Mar, Barcelona (Catalunya).
+This project has been designed and developed by 🎩 🐧 [Mr. Puffin](http://mrpuffin.cat/), a communication studio based in Vilassar de Mar, Barcelona (Catalunya).
 
 <table>
   <tbody>
