@@ -4,13 +4,13 @@
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
 
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+    <!-- <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
       <img src="http://via.placeholder.com/340x90" width="340" height="90" alt="{{ site.title | escape }}">
-    </a>
+    </a> -->
 
     {% if page_paths %}
     <nav class="site-nav">
-      {% include social.html %}
+      <!-- {% include social.html %} -->
 
       {% for path in page_paths %}
         {% assign my_page = site.pages | where: "path", path | first %}
