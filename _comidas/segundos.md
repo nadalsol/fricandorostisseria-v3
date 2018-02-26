@@ -1,0 +1,20 @@
+---
+layout: food
+title: Segundos
+---
+
+* Pollo a l'ast **9,00€**
+* <sup>1/2</sup> pollo a l'ast **5,00€**
+* Conejo con caracoles **5,00€**
+* Galtas de cerdo al horno con guarnición **3,90€**
+* Codillo al horno con guarnición **7,00€**
+* Pies de cerdo en salsa **4,50€**
+* Fricandó de ternera **7,00€**
+* Redondo de ternera con ciruelas y piñones **7,00€**
+* Salchichas con tomate **4,50€**
+* Albóndigas con tomate **4,80€**
+* Albóndigas con sepia **6,80€**
+* Butifarra con judías **4,50€**
+* Cabezas de cordero **5,50€**
+* Bacalao con samfaina **6,50€**
+* Calamares rellenos **6,50€**
