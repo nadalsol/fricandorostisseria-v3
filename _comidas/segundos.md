@@ -5,7 +5,7 @@ title: Segundos
 
 * Pollo a l'ast **9,00€**
 * <sup>1/2</sup> pollo a l'ast **5,00€**
-* Conejo con caracoles **5,00€**
+* Conejo con caracoles **5,80€**
 * Galtas de cerdo al horno con guarnición **3,90€**
 * Codillo al horno con guarnición **7,00€**
 * Pies de cerdo en salsa **4,50€**
