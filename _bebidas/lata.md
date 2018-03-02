@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Lata
+order: 1
 ---
 
 * Coca cola o Zero **1,50€**

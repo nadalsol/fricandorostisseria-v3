@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Bocadillos especiales (pan de frankfurt)
+order: 3
 ---
 
 * **26.** Frankfurt completo **4,50€** *Frankfurt, bacon, queso, lechuga, tomate, mahonesa*

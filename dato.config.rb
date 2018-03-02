@@ -4,7 +4,8 @@ directory "_comidas" do
     create_post "#{item.title.parameterize}.md" do
       frontmatter :yaml, {
         layout: "food",
-        title: item.title
+        title: item.title,
+        order: item.order
       }
       content item.description
     end
@@ -15,7 +16,8 @@ directory "_cenas" do
     create_post "#{item.title.parameterize}.md" do
       frontmatter :yaml, {
         layout: "food",
-        title: item.title
+        title: item.title,
+        order: item.order
       }
       content item.description
     end
@@ -26,7 +28,8 @@ directory "_bebidas" do
     create_post "#{item.title.parameterize}.md" do
       frontmatter :yaml, {
         layout: "food",
-        title: item.title
+        title: item.title,
+        order: item.order
       }
       content item.description
     end
@@ -37,7 +40,8 @@ directory "_encargos" do
     create_post "#{item.title.parameterize}.md" do
       frontmatter :yaml, {
         layout: "food",
-        title: item.title
+        title: item.title,
+        order: item.order
       }
       content item.description
     end

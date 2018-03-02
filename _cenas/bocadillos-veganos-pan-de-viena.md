@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Bocadillos veganos (pan de Viena)
+order: 5
 ---
 
 * **37.** Frankfurt vegano **3,50€**

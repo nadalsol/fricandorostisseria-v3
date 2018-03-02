@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Veganos
+order: 8
 ---
 
 * Arroz con verduras y setas **5,50€**

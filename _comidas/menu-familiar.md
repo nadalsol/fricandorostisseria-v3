@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Menú familiar
+order: 4
 ---
 
 * 2 Pollos a l'ast

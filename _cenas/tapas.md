@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Tapas
+order: 7
 ---
 
 * **49.** Croquetas de pollo **4,50€ (ración 6 uni.)**

@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Segundos
+order: 9
 ---
 
 * Pollo a l'ast **9,00€**

@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Bocadillos (pan de frankfurt)
+order: 1
 ---
 
 * **1.** Frankfurt **2,60€**

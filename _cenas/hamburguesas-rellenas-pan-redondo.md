@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Hamburguesas rellenas (pan redondo)
+order: 4
 ---
 
 * **34.** Roquefort **6,50€** *Hamburguesa de 250 gr, bacon, roquefort, lechuga, tomate, cebolla y mayonesa*

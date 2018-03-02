@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Por encargo
+order: 1
 ---
 
 * Conejo a l'ast con guarnición **13,50€**

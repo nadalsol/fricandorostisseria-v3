@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Menú 3
+order: 3
 ---
 
 * <sup>1/2</sup> Pollo a l'ast

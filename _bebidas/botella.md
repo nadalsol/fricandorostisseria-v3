@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Botella
+order: 2
 ---
 
 * Lambrusco **4,00€**

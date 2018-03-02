@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Entrantes
+order: 7
 ---
 
 * Canelones caseros de carne **3,40€ (ración 3 uni.)**

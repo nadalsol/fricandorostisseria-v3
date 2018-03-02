@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Pizzas (30 cm de diámetro aprox.)
+order: 6
 ---
 
 * **43.** Cuatro quesos **6,50€**

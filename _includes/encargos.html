@@ -1,0 +1,10 @@
+<div class="category" id="encargos">
+  <h2>Por encargo</h2>
+  {% assign encargos = site.encargos | sort: 'order' %}
+  {% for encargo in encargos %}
+    <div class="sub-category">
+      <h3>{{ encargo.title }}</h3>
+      {{ encargo.content }}
+    </div>
+  {% endfor %}
+</div>

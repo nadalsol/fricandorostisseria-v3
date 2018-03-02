@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Bikinis
+order: 2
 ---
 
 * **24.** Jamón york y queso **3,50€**

@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Salsas
+order: 8
 ---
 
 * Tomate de 50 cc **0,50€ (bolsas tres bocadillos)**

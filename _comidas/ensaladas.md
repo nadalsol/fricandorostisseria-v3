@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Ensaladas
+order: 5
 ---
 
 * Esqueixada de bacalao **5€**

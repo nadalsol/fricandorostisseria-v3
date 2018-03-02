@@ -1,0 +1,10 @@
+<div class="category" id="comidas">
+  <h2>Para comer</h2>
+  {% assign comidas = site.comidas | sort: 'order' %}
+  {% for comida in comidas %}
+    <div class="sub-category">
+      <h3>{{ comida.title }}</h3>
+      {{ comida.content }}
+    </div>
+  {% endfor %}
+</div>

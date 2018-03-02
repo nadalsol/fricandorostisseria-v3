@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Aperitivos
+order: 6
 ---
 
 * Huevos rellenos de atún **0,75€ (uni.)**

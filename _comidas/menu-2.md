@@ -1,6 +1,7 @@
 ---
 layout: food
 title: Menú 2
+order: 2
 ---
 
 * 1 Pollo a l'ast
