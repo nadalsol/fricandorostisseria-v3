@@ -3,7 +3,7 @@ directory "_comidas" do
   dato.comidas.each do |item|
     create_post "#{item.title.parameterize}.md" do
       frontmatter :yaml, {
-        layout: "food",
+        layout: "home",
         title: item.title,
         order: item.order
       }
@@ -15,7 +15,7 @@ directory "_cenas" do
   dato.cenas.each do |item|
     create_post "#{item.title.parameterize}.md" do
       frontmatter :yaml, {
-        layout: "food",
+        layout: "home",
         title: item.title,
         order: item.order
       }
@@ -27,7 +27,7 @@ directory "_bebidas" do
   dato.bebidas.each do |item|
     create_post "#{item.title.parameterize}.md" do
       frontmatter :yaml, {
-        layout: "food",
+        layout: "home",
         title: item.title,
         order: item.order
       }
@@ -39,7 +39,7 @@ directory "_encargos" do
   dato.encargos.each do |item|
     create_post "#{item.title.parameterize}.md" do
       frontmatter :yaml, {
-        layout: "food",
+        layout: "home",
         title: item.title,
         order: item.order
       }

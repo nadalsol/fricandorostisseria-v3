@@ -1,0 +1,34 @@
+// Main navigation
+// -----------------------------------------------------------------------------
+
+
+.nav-main {
+  @include list-inline($sp-xsmall, $sp-xsmall);
+  padding: $sp-small;
+  text-transform: uppercase;
+
+  &__link {
+    color: $c-light;
+
+    &:visited {
+      color: $c-light;
+    }
+
+    &:hover {
+      color: $c-brand-primary;
+    }
+
+    &.active,
+    &:active {
+      position: relative;
+      color: $c-brand-primary;
+
+      &::after {
+        @include positioner-center-h(80%, 2px);
+        content: '';
+        bottom: -7px;
+        border-bottom: 2px dotted $c-light;
+      }
+    }
+  }
+}

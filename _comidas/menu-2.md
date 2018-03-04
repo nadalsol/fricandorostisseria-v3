@@ -1,5 +1,5 @@
 ---
-layout: food
+layout: home
 title: Menú 2
 order: 2
 ---

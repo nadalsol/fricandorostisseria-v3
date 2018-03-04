@@ -1,0 +1,113 @@
+// Mixins
+// -----------------------------------------------------------------------------
+
+
+// // Clearfix
+// @mixin clearfix() {
+//   &:before,
+//   &:after {
+//     content: " ";
+//     display: table;
+//   }
+//   &:after {
+//     clear: both;
+//   }
+// }
+
+// Box sizing
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+// Responsive image
+// Keep images from scaling beyond the width of their parents.
+@mixin img-responsive($display: block) {
+  display: $display;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+}
+
+// Sizing shortcuts
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// // Transitions
+// @mixin transition($transition...) {
+//   -webkit-transition: $transition;
+//        -o-transition: $transition;
+//           transition: $transition;
+// }
+
+// WebKit-style focus
+//
+// 1. Default
+// 2. WebKit
+//
+@mixin tab-focus() {
+  outline: thin dotted; // 1
+  outline: 5px auto -webkit-focus-ring-color; // 2
+  outline-offset: -2px; // 2
+}
+
+// Reset default list styles
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// // Turns list items into floated elements
+// @mixin list-float() {
+//   @include list-reset;
+//   @include clearfix;
+
+//   > li,
+//   > dt,
+//   > dd {
+//     float: left;
+//   }
+// }
+
+// Turns list items into inline-block
+@mixin list-inline($pad-left: $sp-base, $pad-right: $sp-base) {
+  @include list-reset;
+
+  > li {
+    display: inline-block;
+    padding-left: $pad-left;
+    padding-right: $pad-right;
+  }
+}
+
+// Positioner for horizontal and vertical centering
+// @mixin positioner-center($width, $height) {
+//   position: absolute;
+//   width: $width;
+//   height: $height;
+//   left: 50%;
+//   top: 50%;
+//   margin-left: -($width / 2);
+//   margin-top: -($height / 2);
+// }
+
+// Positioner for horizontal centering
+@mixin positioner-center-h($width, $height) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  left: 50%;
+  margin-left: -($width / 2);
+}
+
+// Positioner for vertical centering
+// @mixin positioner-center-v($width, $height) {
+//   position: absolute;
+//   width: $width;
+//   height: $height;
+//   top: 50%;
+//   margin-top: -($height / 2);
+// }

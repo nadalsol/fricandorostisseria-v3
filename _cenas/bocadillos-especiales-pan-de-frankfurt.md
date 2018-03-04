@@ -1,5 +1,5 @@
 ---
-layout: food
+layout: home
 title: Bocadillos especiales (pan de frankfurt)
 order: 3
 ---

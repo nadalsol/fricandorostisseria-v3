@@ -1,5 +1,5 @@
 ---
-layout: food
+layout: home
 title: Ensaladas
 order: 5
 ---

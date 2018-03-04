@@ -1,14 +1,12 @@
-<header class="site-header" role="banner">
+<header class="header" role="banner">
 
-  <div class="wrapper">
-    <!-- <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-      <img src="http://via.placeholder.com/340x90" width="340" height="90" alt="{{ site.title | escape }}">
-    </a> -->
+  <a class="header__brand" rel="author" href="{{ "/" | relative_url }}">
+    {% include svg/brand.svg %}
+  </a>
 
-    <nav class="site-nav">
-      <!-- {% include social.html %} -->
-      {% include nav.html %}
-    </nav>
-  </div>
+  <nav class="header__nav">
+    <!-- {% include nav-social.html %} -->
+    {% include nav-main.html %}
+  </nav>
 
 </header>

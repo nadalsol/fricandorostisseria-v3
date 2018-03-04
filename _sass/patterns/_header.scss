@@ -1,0 +1,24 @@
+// Header
+// -----------------------------------------------------------------------------
+
+
+.header {
+  @include size($header-wd, $header-ht);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &__brand {
+    @include size($header-brand-wd, $header-brand-ht);
+    display: block;
+    padding: $header-brand-pd;
+    background-color: $header-brand-bg;
+    text-align: center;
+  }
+
+  &__nav {
+    @include size($header-nav-wd, $header-nav-ht);
+    background-color: $header-nav-bg;
+    text-align: center;
+  }
+}

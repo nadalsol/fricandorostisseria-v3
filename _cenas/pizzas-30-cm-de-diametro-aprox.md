@@ -1,5 +1,5 @@
 ---
-layout: food
+layout: home
 title: Pizzas (30 cm de diámetro aprox.)
 order: 6
 ---

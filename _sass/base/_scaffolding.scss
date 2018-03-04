@@ -1,0 +1,112 @@
+// Scaffolding
+// -----------------------------------------------------------------------------
+
+
+// Reset box-sizing
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+// Reset some basic elements
+// h1, h2, h3, h4, h5, h6,
+// p, blockquote, pre, hr,
+// dl, dd, ol, ul, figure {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// Basic styling
+body {
+  margin-top: $header-ht; // TODO : to be moved to food sections
+  font-family: $ff-base;
+  font-size: $fz-base;
+  line-height: $lh-base;
+  color: $text-c;
+  background-color: $body-bg;
+}
+
+// Set `margin-bottom` to maintain vertical rhythm
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-top: 0;
+  margin-bottom: $sp-small;
+}
+
+// Links
+a {
+  color: $link-c;
+  text-decoration: none;
+
+  &:visited {
+    color: $link-c;
+  }
+
+  &:hover {
+    color: $link-c-hover;
+  }
+
+  &:focus {
+    @include tab-focus;
+  }
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $fw-base;
+  line-height: $lh-base;
+}
+
+h1 {
+  font-family: $ff-base;
+  font-size: $fz-xlarge;
+  color: $c-dark;
+}
+
+h2 {
+  font-family: $ff-base;
+  font-size: $fz-large;
+  color: $c-dark;
+}
+
+h3 {
+  font-family: $ff-serif;
+  font-size: $fz-medium;
+  color: $c-dark;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: $ff-base;
+  font-size: $fz-base;
+  color: $c-dark-soft;
+}
+
+h5 {
+  font-family: $ff-base;
+  font-size: $fz-small;
+  color: $c-neutral;
+}
+
+h6 {
+  font-family: $ff-base;
+  font-size: $fz-xsmall;
+  color: $c-light-soft;
+}
+
+// Lists
+ul, ol {
+  margin-left: $sp-small;
+}
+
+// Images
+img {
+  vertical-align: middle;
+}
+
+// Responsive images (ensure images don't scale beyond their parents)
+.img-responsive {
+  @include img-responsive;
+}

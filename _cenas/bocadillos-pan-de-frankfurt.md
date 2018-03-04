@@ -1,5 +1,5 @@
 ---
-layout: food
+layout: home
 title: Bocadillos (pan de frankfurt)
 order: 1
 ---

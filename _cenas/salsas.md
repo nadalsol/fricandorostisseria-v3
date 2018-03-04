@@ -1,5 +1,5 @@
 ---
-layout: food
+layout: home
 title: Salsas
 order: 8
 ---

@@ -1,5 +1,5 @@
 ---
-layout: food
+layout: home
 title: Hamburguesas rellenas (pan redondo)
 order: 4
 ---

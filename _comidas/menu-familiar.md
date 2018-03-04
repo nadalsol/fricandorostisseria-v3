@@ -1,5 +1,5 @@
 ---
-layout: food
+layout: home
 title: Menú familiar
 order: 4
 ---

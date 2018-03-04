@@ -1,5 +1,5 @@
 ---
-layout: food
+layout: home
 title: Entrantes
 order: 7
 ---

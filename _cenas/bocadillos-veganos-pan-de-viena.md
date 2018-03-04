@@ -1,5 +1,5 @@
 ---
-layout: food
+layout: home
 title: Bocadillos veganos (pan de Viena)
 order: 5
 ---

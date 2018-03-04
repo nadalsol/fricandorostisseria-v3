@@ -1,0 +1,11 @@
+// Social navigation
+// -----------------------------------------------------------------------------
+
+
+.nav-social {
+  @include list-inline($sp-xsmall, $sp-xsmall);
+
+  a {
+    color: red;
+  }
+}

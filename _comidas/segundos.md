@@ -1,5 +1,5 @@
 ---
-layout: food
+layout: home
 title: Segundos
 order: 9
 ---
