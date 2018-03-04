@@ -10,7 +10,9 @@
 
 ## Introduction
 
-**Fricandó Rostisseria** is a handmade / to take away food shop located in Badalona (Barcelona). The site has been created using [Jekyll](https://jekyllrb.com/), [GitHub](https://github.com/), [Netlify](https://www.netlify.com/) and [DatoCMS](https://www.datocms.com/).
+**Fricandó Rostisseria** is a handmade / to take away food shop located in Badalona (Barcelona).
+
+The site has been created using [Jekyll](https://jekyllrb.com/), [GitHub](https://github.com/), [Netlify](https://www.netlify.com/) and [DatoCMS](https://www.datocms.com/).
 
 * **Jekyll** is a simple, blog-aware, static site generator.
 * **GitHub** is a development platform where you can host and review code.
