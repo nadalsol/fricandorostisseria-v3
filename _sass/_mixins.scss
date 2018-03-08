@@ -116,7 +116,6 @@
 
 // Footer columns
 @mixin footer-col($wd, $ta) {
-  float: left;
   width: $wd;
   text-align: $ta;
 }
@@ -130,8 +129,8 @@
 // 4. IE6-9
 //
 @mixin gradient-vertical($c-start: rgba(17,17,17,0), $c-mid: rgba(17,17,17,1), $c-end: rgba(255,255,255,1), $c-start-ie: $c-dark, $c-end-ie: $c-light) {
-  background: -moz-linear-gradient(top, $c-start 0%, $c-start 10%, $c-mid 50%, $c-end 51%, $c-end 100%); // 1
-  background: -webkit-linear-gradient(top, $c-start 0%, $c-start 10%, $c-mid 50%, $c-end 51%, $c-end 100%); // 2
-  background: linear-gradient(to bottom, $c-start 0%, $c-start 10%, $c-mid 50%, $c-end 51%, $c-end 100%); // 3
+  background: -moz-linear-gradient(top, $c-start 0%, $c-start 10%, $c-mid 47%, $c-end 47%, $c-end 100%); // 1
+  background: -webkit-linear-gradient(top, $c-start 0%, $c-start 10%, $c-mid 47%, $c-end 47%, $c-end 100%); // 2
+  background: linear-gradient(to bottom, $c-start 0%, $c-start 10%, $c-mid 47%, $c-end 47%, $c-end 100%); // 3
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$c-start-ie}', endColorstr='#{$c-end-ie}', GradientType=0 ); // 4
 }

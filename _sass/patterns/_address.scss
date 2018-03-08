@@ -1,0 +1,23 @@
+// Address
+// -----------------------------------------------------------------------------
+
+
+.address {
+  color: $c-dark;
+
+  &:visited {
+    color: $c-dark;
+  }
+
+  &:hover {
+    color: $c-brand-primary;
+  }
+
+  > span {
+    text-decoration: underline;
+  }
+
+  > .icon {
+    margin-left: $sp-base;
+  }
+}
