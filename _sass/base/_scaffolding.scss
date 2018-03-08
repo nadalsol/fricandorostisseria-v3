@@ -24,7 +24,9 @@ body {
   font-size: $fz-base;
   line-height: $lh-base;
   color: $text-c;
-  background-color: $body-bg;
+  background: $body-bg-c url('#{$assets-path}/#{$body-bg-img}') no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 // Set `margin-bottom` to maintain vertical rhythm

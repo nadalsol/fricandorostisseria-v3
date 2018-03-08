@@ -1,0 +1,21 @@
+// Footer
+// -----------------------------------------------------------------------------
+
+
+.footer {
+  @include positioner(fixed, $footer-wd, $footer-ht, bottom, 0, left, 0);
+  @include clearfix;
+  @include gradient-vertical;
+
+  &__col-l {
+    @include footer-col(35%, left);
+  }
+
+  &__col-c {
+    @include footer-col(30%, center);
+  }
+
+  &__col-r {
+    @include footer-col(35%, right);
+  }
+}

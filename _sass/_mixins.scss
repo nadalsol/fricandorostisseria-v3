@@ -2,37 +2,37 @@
 // -----------------------------------------------------------------------------
 
 
-// // Clearfix
-// @mixin clearfix() {
-//   &:before,
-//   &:after {
-//     content: " ";
-//     display: table;
-//   }
-//   &:after {
-//     clear: both;
-//   }
-// }
+// Clearfix
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
 
-// Box sizing
-@mixin box-sizing($boxmodel) {
-  -webkit-box-sizing: $boxmodel;
-     -moz-box-sizing: $boxmodel;
-          box-sizing: $boxmodel;
+// Box sizing (box model)
+@mixin box-sizing($bm) {
+  -webkit-box-sizing: $bm;
+     -moz-box-sizing: $bm;
+          box-sizing: $bm;
 }
 
 // Responsive image
 // Keep images from scaling beyond the width of their parents.
-@mixin img-responsive($display: block) {
-  display: $display;
+@mixin img-responsive($dp: block) {
+  display: $dp;
   max-width: 100%; // Part 1: Set a maximum relative to the parent
   height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
 }
 
 // Sizing shortcuts
-@mixin size($width, $height) {
-  width: $width;
-  height: $height;
+@mixin size($wd, $ht) {
+  width: $wd;
+  height: $ht;
 }
 
 // // Transitions
@@ -73,41 +73,70 @@
 // }
 
 // Turns list items into inline-block
-@mixin list-inline($pad-left: $sp-base, $pad-right: $sp-base) {
+@mixin list-inline($pdl: $sp-base, $pdr: $sp-base) {
   @include list-reset;
 
   > li {
     display: inline-block;
-    padding-left: $pad-left;
-    padding-right: $pad-right;
+    padding-left: $pdl;
+    padding-right: $pdr;
   }
 }
 
 // Positioner for horizontal and vertical centering
-// @mixin positioner-center($width, $height) {
+// @mixin positioner-center($wd, $ht) {
 //   position: absolute;
-//   width: $width;
-//   height: $height;
+//   width: $wd;
+//   height: $ht;
 //   left: 50%;
 //   top: 50%;
-//   margin-left: -($width / 2);
-//   margin-top: -($height / 2);
+//   margin-left: -($wd / 2);
+//   margin-top: -($ht / 2);
 // }
 
+// Positioner
+@mixin positioner($po, $po-wd, $po-ht, $po-v-property, $po-v-value, $po-h-property, $po-h-value) {
+  position: $po;
+  width: $po-wd;
+  height: $po-ht;
+  #{$po-v-property}: ($po-v-value);
+  #{$po-h-property}: ($po-h-value);
+}
+
 // Positioner for horizontal centering
-@mixin positioner-center-h($width, $height) {
+@mixin positioner-center-h($wd, $ht) {
   position: absolute;
-  width: $width;
-  height: $height;
+  width: $wd;
+  height: $ht;
   left: 50%;
-  margin-left: -($width / 2);
+  margin-left: -($wd / 2);
 }
 
 // Positioner for vertical centering
-// @mixin positioner-center-v($width, $height) {
+// @mixin positioner-center-v($wd, $ht) {
 //   position: absolute;
-//   width: $width;
-//   height: $height;
+//   width: $wd;
+//   height: $ht;
 //   top: 50%;
-//   margin-top: -($height / 2);
+//   margin-top: -($ht / 2);
 // }
+
+// Footer columns
+@mixin footer-col($wd, $ta) {
+  float: left;
+  width: $wd;
+  text-align: $ta;
+}
+
+// Vertical gradient, from top to bottom
+// Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#222222+0,222222+10,222222+50,ffffff+51,ffffff+100&0+0,0+10,1+51
+@mixin gradient-vertical() {
+  // FF3.6-15
+  background: -moz-linear-gradient(top, rgba(17,17,17,0) 0%, rgba(17,17,17,0) 10%, rgba(17,17,17,1) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 100%);
+  // Chrome10-25,Safari5.1-6
+  background: -webkit-linear-gradient(top, rgba(17,17,17,0) 0%,rgba(17,17,17,0) 10%,rgba(17,17,17,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 100%);
+  // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+  background: linear-gradient(to bottom, rgba(17,17,17,0) 0%,rgba(17,17,17,0) 10%,rgba(17,17,17,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 100%);
+  // IE6-9
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#ffffff',GradientType=0 );
+}

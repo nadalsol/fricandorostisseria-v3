@@ -25,7 +25,11 @@ $c-brand-primary:        #ff4e18 !default;
 $c-brand-secondary:      #ffb500 !default;
 
 // Scaffolding
-$body-bg:                $c-light !default;
+$assets-path:            "/assets" !default;
+
+$body-bg-c:              #494c5b !default;
+$body-bg-img:            "bg-body.jpg" !default;
+
 $text-c:                 $c-dark !default;
 
 $link-c:                 $c-brand-primary !default;
@@ -43,7 +47,7 @@ $sp-xlarge:              floor($sp-base * 7) !default; // 35px
 $sp-xxlarge:             floor($sp-base * 8) !default; // 40px
 
 // Fonts
-$font-path:              "/fonts" !default;
+$fonts-path:             "/fonts" !default;
 
 $ff-sans-serif:          "nexa_lightregular", Arial, Helvetica, sans-serif !default;
 $ff-sans-serif-bold:     "nexa_boldregular", Arial, Helvetica, sans-serif !default;
@@ -107,7 +111,7 @@ $header-brand-img-ht: 91px !default;
 $header-brand-pd:     25px !default;
 $header-brand-wd:     100% !default;
 $header-brand-ht:     floor($header-brand-img-ht + ($header-brand-pd * 2)) !default;
-$header-brand-bg:     rgba(255, 255, 255, .7) !default; // $c-light !default;
+$header-brand-bg:     $c-light !default;
 
 $header-nav-wd:       100% !default;
 $header-nav-ht:       60px !default;
@@ -117,6 +121,6 @@ $header-wd:           100% !default;
 $header-ht:           floor($header-brand-ht + $header-nav-ht) !default;
 
 // Footer
-// $footer-width:                 100% !default;
-// $footer-height:                auto !default;
-// $footer-min-height:            95px !default;
+$footer-wd:           100% !default;
+$footer-ht:           230px !default;
+$footer-bg:           $c-light !default;

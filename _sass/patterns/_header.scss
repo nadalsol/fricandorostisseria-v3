@@ -3,10 +3,7 @@
 
 
 .header {
-  @include size($header-wd, $header-ht);
-  position: fixed;
-  top: 0;
-  left: 0;
+  @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0);
 
   &__brand {
     @include size($header-brand-wd, $header-brand-ht);
