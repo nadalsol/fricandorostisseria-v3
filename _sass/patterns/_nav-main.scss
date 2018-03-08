@@ -7,6 +7,7 @@
   padding: $sp-small;
   font-family: $ff-sans-serif-bold;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 
   &__link {
     color: $c-light;
@@ -19,7 +20,7 @@
       color: $c-brand-primary;
     }
 
-    &.active,
+    &.is-active,
     &:active {
       position: relative;
       color: $c-brand-primary;

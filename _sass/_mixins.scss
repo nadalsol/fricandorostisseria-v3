@@ -35,13 +35,6 @@
   height: $ht;
 }
 
-// // Transitions
-// @mixin transition($transition...) {
-//   -webkit-transition: $transition;
-//        -o-transition: $transition;
-//           transition: $transition;
-// }
-
 // WebKit-style focus
 //
 // 1. Default
@@ -130,13 +123,15 @@
 
 // Vertical gradient, from top to bottom
 // Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#222222+0,222222+10,222222+50,ffffff+51,ffffff+100&0+0,0+10,1+51
-@mixin gradient-vertical() {
-  // FF3.6-15
-  background: -moz-linear-gradient(top, rgba(17,17,17,0) 0%, rgba(17,17,17,0) 10%, rgba(17,17,17,1) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 100%);
-  // Chrome10-25,Safari5.1-6
-  background: -webkit-linear-gradient(top, rgba(17,17,17,0) 0%,rgba(17,17,17,0) 10%,rgba(17,17,17,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 100%);
-  // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
-  background: linear-gradient(to bottom, rgba(17,17,17,0) 0%,rgba(17,17,17,0) 10%,rgba(17,17,17,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 100%);
-  // IE6-9
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#ffffff',GradientType=0 );
+//
+// 1. FF3.6-15
+// 2. Chrome10-25,Safari5.1-6
+// 3. W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+// 4. IE6-9
+//
+@mixin gradient-vertical($c-start: rgba(17,17,17,0), $c-mid: rgba(17,17,17,1), $c-end: rgba(255,255,255,1), $c-start-ie: $c-dark, $c-end-ie: $c-light) {
+  background: -moz-linear-gradient(top, $c-start 0%, $c-start 10%, $c-mid 50%, $c-end 51%, $c-end 100%); // 1
+  background: -webkit-linear-gradient(top, $c-start 0%, $c-start 10%, $c-mid 50%, $c-end 51%, $c-end 100%); // 2
+  background: linear-gradient(to bottom, $c-start 0%, $c-start 10%, $c-mid 50%, $c-end 51%, $c-end 100%); // 3
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$c-start-ie}', endColorstr='#{$c-end-ie}', GradientType=0 ); // 4
 }

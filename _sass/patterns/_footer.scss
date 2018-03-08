@@ -6,6 +6,7 @@
   @include positioner(fixed, $footer-wd, $footer-ht, bottom, 0, left, 0);
   @include clearfix;
   @include gradient-vertical;
+  padding: $sp-large $sp-xxxlarge;
 
   &__col-l {
     @include footer-col(35%, left);
