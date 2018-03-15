@@ -15,7 +15,8 @@
 
   &__nav {
     @include size($header-nav-wd, $header-nav-ht);
+    position: relative;
     background-color: $header-nav-bg;
-    text-align: center;
+    overflow: hidden;
   }
 }

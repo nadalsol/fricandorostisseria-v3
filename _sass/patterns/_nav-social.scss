@@ -3,9 +3,10 @@
 
 
 .nav-social {
+  @include positioner(absolute, auto, auto, top, 12px, left, $sp-large);
   @include list-inline($sp-xsmall, $sp-xsmall);
 
   a {
-    color: red;
+    display: block;
   }
 }

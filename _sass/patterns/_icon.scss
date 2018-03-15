@@ -25,3 +25,7 @@
 .icon--small {
   @include size(13px, 19px);
 }
+
+.icon--medium {
+  @include size(32px, 32px);
+}
