@@ -1,5 +1,7 @@
 <div class="category" id="comidas">
-  <h2>Para comer</h2>
+  <h2 class="heading-category">
+    {% include svg/para-comer.svg css-class="icon icon--category" %}
+  </h2>
   {% assign comidas = site.comidas | sort: 'order' %}
   {% for comida in comidas %}
     <div class="sub-category">

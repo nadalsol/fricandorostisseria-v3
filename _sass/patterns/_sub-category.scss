@@ -1,0 +1,20 @@
+// Sub-category
+// -----------------------------------------------------------------------------
+
+
+.sub-category {
+  color: $c-light;
+
+  h3 {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: $c-light;
+  }
+
+  p,
+  ul,
+  ol {
+    // font-family: $ff-sans-serif-bold;
+    line-height: 2;
+  }
+}

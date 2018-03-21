@@ -134,3 +134,23 @@
   background: linear-gradient(to bottom, $c-start 0%, $c-start 10%, $c-mid 47%, $c-end 47%, $c-end 100%); // 3
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$c-start-ie}', endColorstr='#{$c-end-ie}', GradientType=0 ); // 4
 }
+
+// Headings
+@mixin heading($fz, $c) {
+  font-size: $fz;
+  color: $c;
+}
+
+// Links
+@mixin link($c, $c-visited, $c-hover) {
+  color: $c;
+  transition: $transition-color;
+
+  &:visited {
+    color: $c-visited;
+  }
+
+  &:hover {
+    color: $c-hover;
+  }
+}

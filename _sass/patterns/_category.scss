@@ -1,0 +1,11 @@
+// Category
+// -----------------------------------------------------------------------------
+
+
+.category {
+  margin-bottom: $category-sp;
+
+  &:last-child {
+    margin-bottom: $category-sp-last;
+  }
+}

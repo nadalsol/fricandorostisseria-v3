@@ -1,0 +1,17 @@
+// Headings
+// -----------------------------------------------------------------------------
+
+
+.heading-category {
+  margin-bottom: $sp-large;
+  text-align: center;
+}
+
+.heading-brand {
+  margin-bottom: 0;
+  text-align: center;
+
+  > a {
+    display: inline-block;
+  }
+}

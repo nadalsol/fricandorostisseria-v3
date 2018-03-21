@@ -56,7 +56,7 @@ $ff-serif:               "ITC American Typewriter Bold", "Courier New", Courier,
 $ff-base:                $ff-sans-serif !default;
 
 $fz-base:                14px !default;
-$fz-xsmall:              10px !default;
+$fz-xsmall:              11px !default;
 $fz-small:               12px !default;
 $fz-medium:              16px !default;
 $fz-large:               18px !default;
@@ -81,7 +81,7 @@ $screen-xl-max: 120em !default;      // 1920px
 
 $screen-xxl-min: 120.063em !default; // 1921px
 
-// Media Queries
+// Media queries
 $screen: "only screen" !default;
 
 $landscape: "#{$screen} and (orientation: landscape)" !default;
@@ -101,6 +101,9 @@ $xlarge-only: "#{$screen} and (min-width:#{$screen-xl-min}) and (max-width:#{$sc
 
 $xxlarge-up: "#{$screen} and (min-width:#{$screen-xxl-min})" !default;
 
+// Transitions
+$transition-color: 250ms color !default;
+
 
 // Patterns
 // -----------------------------------------------------------------------------
@@ -109,7 +112,7 @@ $xxlarge-up: "#{$screen} and (min-width:#{$screen-xxl-min})" !default;
 $header-brand-img-wd: 339px !default;
 $header-brand-img-ht: 91px !default;
 
-$header-brand-pd:     25px !default;
+$header-brand-pd:     $sp-medium !default;
 $header-brand-wd:     100% !default;
 $header-brand-ht:     floor($header-brand-img-ht + ($header-brand-pd * 2)) !default;
 $header-brand-bg:     $c-light !default;
@@ -125,3 +128,10 @@ $header-ht:           floor($header-brand-ht + $header-nav-ht) !default;
 $footer-wd:           100% !default;
 $footer-ht:           230px !default;
 $footer-bg:           $c-light !default;
+
+// Body offset
+$body-offset:         $header-ht !default; // floor($header-ht + $sp-medium) !default;
+
+// Category
+$category-sp:         100px !default;
+$category-sp-last:    $footer-ht !default;

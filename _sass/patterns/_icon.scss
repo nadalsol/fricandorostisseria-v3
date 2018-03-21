@@ -20,12 +20,29 @@
 //
 // Purpose: Size class, to specify different icon sizes.
 //
-// Possible values: `Icon--small`, `Icon--medium`, `Icon--large`...
+// Possible values: `Icon--small`, `Icon--medium`...
 //
+// address
 .icon--small {
-  @include size(13px, 19px);
+  @include size(13px, 19px); // TODO : to be modified (final size: 19px, 19px)
 }
 
+// social
 .icon--medium {
   @include size(32px, 32px);
+}
+
+// call us
+.icon--large {
+  @include size(176px, 171px); // TODO : to be modified (final size: 176px, 176px)
+}
+
+// category
+.icon--category {
+  @include size(273px, 94px);
+}
+
+// brand
+.icon--brand {
+  @include size(339px, 91px);
 }

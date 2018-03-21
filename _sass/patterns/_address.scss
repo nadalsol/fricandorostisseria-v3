@@ -3,15 +3,7 @@
 
 
 .address {
-  color: $c-dark;
-
-  &:visited {
-    color: $c-dark;
-  }
-
-  &:hover {
-    color: $c-brand-primary;
-  }
+  @include link($c-dark, $c-dark, $c-brand-primary);
 
   > span {
     text-decoration: underline;

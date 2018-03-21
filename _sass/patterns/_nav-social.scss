@@ -3,10 +3,11 @@
 
 
 .nav-social {
-  @include positioner(absolute, auto, auto, top, 12px, left, $sp-large);
-  @include list-inline($sp-xsmall, $sp-xsmall);
+  @include positioner(absolute, auto, auto, top, 12px, left, $sp-xlarge);
+  @include list-inline($sp-xxsmall, $sp-xxsmall);
 
   a {
+    @include link($c-light, $c-light, $c-brand-primary);
     display: block;
   }
 }

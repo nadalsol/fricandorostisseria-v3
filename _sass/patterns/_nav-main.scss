@@ -11,15 +11,7 @@
   text-align: center;
 
   &__link {
-    color: $c-light;
-
-    &:visited {
-      color: $c-light;
-    }
-
-    &:hover {
-      color: $c-brand-primary;
-    }
+    @include link($c-light, $c-light, $c-brand-primary);
 
     &.is-active,
     &:active {
