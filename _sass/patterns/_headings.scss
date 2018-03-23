@@ -2,16 +2,31 @@
 // -----------------------------------------------------------------------------
 
 
-.heading-category {
-  margin-bottom: $sp-large;
-  text-align: center;
-}
-
 .heading-brand {
   margin-bottom: 0;
   text-align: center;
 
   > a {
     display: inline-block;
+  }
+}
+
+.heading-category {
+  margin-bottom: $sp-large;
+  text-align: center;
+}
+
+.heading-sub-category {
+  display: inline-block;
+  padding-left: $sp-large;
+  padding-right: $sp-large;
+  line-height: 29px;
+  background:
+    url("#{$assets-path}/bg-heading-sub-category-l.png") no-repeat left center,
+    url("#{$assets-path}/bg-heading-sub-category-r.png") no-repeat right center;
+
+  > span {
+    display: block;
+    background-color: $c-light;
   }
 }

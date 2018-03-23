@@ -5,7 +5,9 @@
   {% assign comidas = site.comidas | sort: 'order' %}
   {% for comida in comidas %}
     <div class="sub-category">
-      <h3>{{ comida.title }}</h3>
+      <h3 class="heading-sub-category">
+        <span>{{ comida.title }}</span>
+      </h3>
       {{ comida.content }}
     </div>
   {% endfor %}

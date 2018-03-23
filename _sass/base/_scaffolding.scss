@@ -25,7 +25,7 @@ body {
   font-weight: $fw-base;
   line-height: $lh-base;
   color: $text-c;
-  background: $body-bg-c url('#{$assets-path}/#{$body-bg-img}') no-repeat center top;
+  background: $body-bg-c url("#{$assets-path}/#{$body-bg-img}") no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -87,6 +87,12 @@ a {
 // Lists
 ul, ol {
   margin-left: $sp-small;
+}
+
+// Main
+// Default value of `display` of `main` element is 'inline' in IE 11
+main {
+  display: block;
 }
 
 // Vertical rhythm
