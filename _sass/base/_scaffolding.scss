@@ -6,7 +6,7 @@
 *,
 *:before,
 *:after {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 }
 
 // Reset some basic elements
@@ -28,24 +28,6 @@ body {
   background: $body-bg-c url('#{$assets-path}/#{$body-bg-img}') no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
-}
-
-// Set `margin-bottom` to maintain vertical rhythm
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure {
-  margin-top: 0;
-  margin-bottom: $sp-small;
-}
-
-// Links
-a {
-  @include link($link-c, $link-c, $link-c-hover);
-  text-decoration: none;
-
-  &:focus {
-    @include tab-focus;
-  }
 }
 
 // Headings
@@ -82,11 +64,6 @@ h6 {
   @include heading($fz-xsmall, $c-light);
 }
 
-// Lists
-ul, ol {
-  margin-left: $sp-small;
-}
-
 // Images
 img {
   vertical-align: middle;
@@ -95,4 +72,39 @@ img {
 // Responsive images (ensure images don't scale beyond their parents)
 .img-responsive {
   @include img-responsive;
+}
+
+// Links
+a {
+  @include link($link-c, $link-c, $link-c-hover);
+  text-decoration: none;
+
+  &:focus {
+    @include tab-focus;
+  }
+}
+
+// Lists
+ul, ol {
+  margin-left: $sp-small;
+}
+
+// Vertical rhythm
+// Set `margin-bottom` to maintain vertical rhythm
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-top: 0;
+  margin-bottom: $sp-small;
+}
+
+// Wrapper
+.wrapper {
+  @include center-block;
+  position: relative;
+  width: 100%;
+
+  @media ($xlarge-up) {
+    width: $screen-xl-min;
+  }
 }

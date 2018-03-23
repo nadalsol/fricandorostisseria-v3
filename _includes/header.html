@@ -1,16 +1,20 @@
 <header class="header" role="banner">
 
   <div class="header__brand">
-    <h1 class="heading-brand">
-      <a rel="author" href="{{ "/" | relative_url }}">
-        {% include svg/brand.svg css-class="icon icon--brand" %}
-      </a>
-    </h1>
+    <div class="wrapper">
+      <h1 class="heading-brand">
+        <a rel="author" href="{{ "/" | relative_url }}">
+          {% include svg/brand.svg css-class="icon icon--brand" %}
+        </a>
+      </h1>
+    </div>
   </div>
 
   <nav class="header__nav">
-    {% include nav-social.html %}
-    {% include nav-main.html %}
+    <div class="wrapper">
+      {% include nav-social.html %}
+      {% include nav-main.html %}
+    </div>
   </nav>
 
 </header>

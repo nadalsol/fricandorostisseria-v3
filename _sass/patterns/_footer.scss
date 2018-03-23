@@ -3,13 +3,16 @@
 
 
 .footer {
-  @include positioner(fixed, $footer-wd, $footer-ht, bottom, 0, left, 0);
+  @include positioner(fixed, $footer-wd, $footer-ht, bottom, 0, left, 0, 10);
   @include gradient-vertical;
-  display: flex;
-  align-items: flex-end;
-  padding: 0 $sp-xxxlarge $sp-xsmall;
+  padding: $sp-xxlarge $sp-xxxlarge 0;
   font-family: $ff-sans-serif-bold;
   line-height: 2;
+
+  > .wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
 
   &__col-l {
     @include footer-col(35%, left);

@@ -3,7 +3,7 @@
 
 
 .nav-social {
-  @include positioner(absolute, auto, auto, top, 12px, left, $sp-xlarge);
+  @include positioner(absolute, auto, auto, top, 12px, left, 0);
   @include list-inline($sp-xxsmall, $sp-xxsmall);
 
   a {

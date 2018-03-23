@@ -3,7 +3,7 @@
 
 
 .header {
-  @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0);
+  @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0, 10);
 
   &__brand {
     @include size($header-brand-wd, $header-brand-ht);
@@ -13,7 +13,6 @@
 
   &__nav {
     @include size($header-nav-wd, $header-nav-ht);
-    position: relative;
     background-color: $header-nav-bg;
     overflow: hidden;
   }

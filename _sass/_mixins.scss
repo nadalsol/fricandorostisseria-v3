@@ -2,6 +2,13 @@
 // -----------------------------------------------------------------------------
 
 
+// Center-align a block level element
+@mixin center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // Clearfix
 @mixin clearfix() {
   &:before,
@@ -12,13 +19,6 @@
   &:after {
     clear: both;
   }
-}
-
-// Box sizing (box model)
-@mixin box-sizing($bm) {
-  -webkit-box-sizing: $bm;
-     -moz-box-sizing: $bm;
-          box-sizing: $bm;
 }
 
 // Responsive image
@@ -73,6 +73,14 @@
     display: inline-block;
     padding-left: $pdl;
     padding-right: $pdr;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 
@@ -88,12 +96,13 @@
 // }
 
 // Positioner
-@mixin positioner($po, $po-wd, $po-ht, $po-v-property, $po-v-value, $po-h-property, $po-h-value) {
+@mixin positioner($po, $po-wd, $po-ht, $po-v-property, $po-v-value, $po-h-property, $po-h-value, $po-zi: auto) {
   position: $po;
   width: $po-wd;
   height: $po-ht;
   #{$po-v-property}: ($po-v-value);
   #{$po-h-property}: ($po-h-value);
+  z-index: $po-zi;
 }
 
 // Positioner for horizontal centering

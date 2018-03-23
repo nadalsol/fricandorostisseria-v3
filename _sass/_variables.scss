@@ -66,40 +66,16 @@ $fw-base:                400 !default;
 
 $lh-base:                1.5 !default;
 
-// Breakpoints
-$screen-sm-min: 0em !default;        // 0
-$screen-sm-max: 40em !default;       // 640px
-
-$screen-md-min: 40.063em !default;   // 641px
-$screen-md-max: 64em !default;       // 1024px
-
-$screen-lg-min: 64.063em !default;   // 1025px
-$screen-lg-max: 90em !default;       // 1440px
-
-$screen-xl-min: 90.063em !default;   // 1441px
-$screen-xl-max: 120em !default;      // 1920px
-
-$screen-xxl-min: 120.063em !default; // 1921px
-
 // Media queries
-$screen: "only screen" !default;
+$screen-sm-min:          480px !default;
+$screen-md-min:          768px !default;
+$screen-lg-min:          992px !default;
+$screen-xl-min:          1200px !default;
 
-$landscape: "#{$screen} and (orientation: landscape)" !default;
-$portrait: "#{$screen} and (orientation: portrait)" !default;
-
-$small-up: $screen !default;
-$small-only: "#{$screen} and (max-width: #{$screen-sm-max})" !default;
-
-$medium-up: "#{$screen} and (min-width:#{$screen-md-min})" !default;
-$medium-only: "#{$screen} and (min-width:#{$screen-md-min}) and (max-width:#{$screen-md-max})" !default;
-
-$large-up: "#{$screen} and (min-width:#{$screen-lg-min})" !default;
-$large-only: "#{$screen} and (min-width:#{$screen-lg-min}) and (max-width:#{$screen-lg-max})" !default;
-
-$xlarge-up: "#{$screen} and (min-width:#{$screen-xl-min})" !default;
-$xlarge-only: "#{$screen} and (min-width:#{$screen-xl-min}) and (max-width:#{$screen-xl-max})" !default;
-
-$xxlarge-up: "#{$screen} and (min-width:#{$screen-xxl-min})" !default;
+$small-up:              "min-width:#{$screen-sm-min}" !default;
+$medium-up:             "min-width:#{$screen-md-min}" !default;
+$large-up:              "min-width:#{$screen-lg-min}" !default;
+$xlarge-up:             "min-width:#{$screen-xl-min}" !default;
 
 // Transitions
 $transition-color: 250ms color !default;
