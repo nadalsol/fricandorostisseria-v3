@@ -2,13 +2,15 @@
   <h2 class="heading-category">
     {% include svg/para-comer.svg css-class="icon icon--category" %}
   </h2>
-  {% assign comidas = site.comidas | sort: 'order' %}
-  {% for comida in comidas %}
-    <div class="sub-category">
-      <h3 class="heading-sub-category">
-        <span>{{ comida.title }}</span>
-      </h3>
-      {{ comida.content }}
-    </div>
-  {% endfor %}
+  <div class="category__content">
+    {% assign comidas = site.comidas | sort: 'order' %}
+    {% for comida in comidas %}
+      <div class="sub-category">
+        <h3 class="heading-sub-category">
+          <span>{{ comida.title }}</span>
+        </h3>
+        {{ comida.content }}
+      </div>
+    {% endfor %}
+  </div>
 </div>

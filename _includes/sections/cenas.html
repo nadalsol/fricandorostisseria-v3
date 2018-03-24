@@ -2,13 +2,15 @@
   <h2 class="heading-category">
     {% include svg/para-cenar.svg css-class="icon icon--category" %}
   </h2>
-  {% assign cenas = site.cenas | sort: 'order' %}
-  {% for cena in cenas %}
-    <div class="sub-category">
-      <h3 class="heading-sub-category">
-        <span>{{ cena.title }}</span>
-      </h3>
-      {{ cena.content }}
-    </div>
-  {% endfor %}
+  <div class="category__content">
+    {% assign cenas = site.cenas | sort: 'order' %}
+    {% for cena in cenas %}
+      <div class="sub-category">
+        <h3 class="heading-sub-category">
+          <span>{{ cena.title }}</span>
+        </h3>
+        {{ cena.content }}
+      </div>
+    {% endfor %}
+  </div>
 </div>

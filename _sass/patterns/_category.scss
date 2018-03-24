@@ -8,4 +8,8 @@
   &:last-child {
     margin-bottom: $category-sp-last;
   }
+
+  &__content {
+    @include clearfix;
+  }
 }

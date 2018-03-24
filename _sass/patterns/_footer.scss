@@ -15,14 +15,14 @@
   }
 
   &__col-l {
-    @include footer-col(35%, left);
+    @include col(35%, left);
   }
 
   &__col-c {
-    @include footer-col(30%, center);
+    @include col(30%, center);
   }
 
   &__col-r {
-    @include footer-col(35%, right);
+    @include col(35%, right);
   }
 }

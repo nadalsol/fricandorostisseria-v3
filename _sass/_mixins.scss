@@ -21,6 +21,12 @@
   }
 }
 
+// Column
+@mixin col($wd, $ta) {
+  width: $wd;
+  text-align: $ta;
+}
+
 // Responsive image
 // Keep images from scaling beyond the width of their parents.
 @mixin img-responsive($dp: block) {
@@ -122,12 +128,6 @@
 //   top: 50%;
 //   margin-top: -($ht / 2);
 // }
-
-// Footer columns
-@mixin footer-col($wd, $ta) {
-  width: $wd;
-  text-align: $ta;
-}
 
 // Vertical gradient, from top to bottom
 // Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#222222+0,222222+10,222222+50,ffffff+51,ffffff+100&0+0,0+10,1+51

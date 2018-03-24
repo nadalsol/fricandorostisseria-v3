@@ -3,7 +3,13 @@
 
 
 .sub-category {
+  float: left;
+  width: 33.3333%;
   color: $c-light;
+
+  &:nth-child(3n+1) {
+    clear: left;
+  }
 
   p,
   ul,

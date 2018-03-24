@@ -8,7 +8,7 @@
 - [x] Remove minima theme styles (CSS).
 - [ ] Remove minima theme?
 - [ ] Mobile styles (responsive).
-- [ ] Add `is-active` class to menu items.
+- [ ] Add `is-active` class to menu items: https://help.shopify.com/themes/liquid/filters/html-filters#script_tag
 - [ ] Change default locale from EN to ES.
 - [ ] Move collections to specific folder: https://jekyllrb.com/docs/collections/
 - [ ] Autoprefixer.

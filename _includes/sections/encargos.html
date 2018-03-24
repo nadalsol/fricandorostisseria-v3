@@ -2,13 +2,15 @@
   <h2 class="heading-category">
     {% include svg/por-encargo.svg css-class="icon icon--category" %}
   </h2>
-  {% assign encargos = site.encargos | sort: 'order' %}
-  {% for encargo in encargos %}
-    <div class="sub-category">
-      <h3 class="heading-sub-category">
-        <span>{{ encargo.title }}</span>
-      </h3>
-      {{ encargo.content }}
-    </div>
-  {% endfor %}
+  <div class="category__content">
+    {% assign encargos = site.encargos | sort: 'order' %}
+    {% for encargo in encargos %}
+      <div class="sub-category">
+        <h3 class="heading-sub-category">
+          <span>{{ encargo.title }}</span>
+        </h3>
+        {{ encargo.content }}
+      </div>
+    {% endfor %}
+  </div>
 </div>
