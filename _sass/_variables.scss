@@ -70,44 +70,44 @@ $lh-base:                1.5 !default;
 $screen-sm-min:          480px !default;
 $screen-md-min:          768px !default;
 $screen-lg-min:          992px !default;
-$screen-xl-min:          1200px !default;
+$screen-xl-min:          1400px !default;
 
-$small-up:              "min-width:#{$screen-sm-min}" !default;
-$medium-up:             "min-width:#{$screen-md-min}" !default;
-$large-up:              "min-width:#{$screen-lg-min}" !default;
-$xlarge-up:             "min-width:#{$screen-xl-min}" !default;
+$small-up:               "min-width:#{$screen-sm-min}" !default;
+$medium-up:              "min-width:#{$screen-md-min}" !default;
+$large-up:               "min-width:#{$screen-lg-min}" !default;
+$xlarge-up:              "min-width:#{$screen-xl-min}" !default;
 
 // Transitions
-$transition-color: 250ms color !default;
+$transition-color:       250ms color !default;
 
 
 // Patterns
 // -----------------------------------------------------------------------------
 
 // Header
-$header-brand-img-wd: 339px !default;
-$header-brand-img-ht: 91px !default;
+$header-brand-img-wd:    339px !default;
+$header-brand-img-ht:    91px !default;
 
-$header-brand-pd:     $sp-medium !default;
-$header-brand-wd:     100% !default;
-$header-brand-ht:     floor($header-brand-img-ht + ($header-brand-pd * 2)) !default;
-$header-brand-bg:     $c-light !default;
+$header-brand-pd:        $sp-medium !default;
+$header-brand-wd:        100% !default;
+$header-brand-ht:        floor($header-brand-img-ht + ($header-brand-pd * 2)) !default;
+$header-brand-bg:        $c-light !default;
 
-$header-nav-wd:       100% !default;
-$header-nav-ht:       60px !default;
-$header-nav-bg:       rgba(0, 0, 0, .3) !default;
+$header-nav-wd:          100% !default;
+$header-nav-ht:          60px !default;
+$header-nav-bg:          rgba(0, 0, 0, .3) !default;
 
-$header-wd:           100% !default;
-$header-ht:           floor($header-brand-ht + $header-nav-ht) !default;
+$header-wd:              100% !default;
+$header-ht:              floor($header-brand-ht + $header-nav-ht) !default;
 
 // Footer
-$footer-wd:           100% !default;
-$footer-ht:           230px !default;
-$footer-bg:           $c-light !default;
+$footer-wd:              100% !default;
+$footer-ht:              230px !default;
+$footer-bg:              $c-light !default;
 
 // Body offset
-$body-offset:         $header-ht !default; // floor($header-ht + $sp-medium) !default;
+$body-offset:            $header-ht !default; // floor($header-ht + $sp-medium) !default;
 
 // Category
-$category-sp:         100px !default;
-$category-sp-last:    $footer-ht !default;
+$category-sp:            100px !default;
+$category-sp-last:       $footer-ht !default;

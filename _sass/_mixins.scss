@@ -163,3 +163,10 @@
     color: $c-hover;
   }
 }
+
+// Vertical rhythm
+// Set `margin-bottom` to maintain vertical rhythm
+@mixin vertical-rhythm($sp: $sp-small) {
+  margin-top: 0;
+  margin-bottom: $sp-small;
+}

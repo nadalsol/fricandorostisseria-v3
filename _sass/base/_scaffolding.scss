@@ -86,7 +86,8 @@ a {
 
 // Lists
 ul, ol {
-  margin-left: $sp-small;
+  margin-left: 0;
+  padding-left: $sp-small;
 }
 
 // Main
@@ -100,8 +101,7 @@ main {
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure {
-  margin-top: 0;
-  margin-bottom: $sp-small;
+  @include vertical-rhythm;
 }
 
 // Wrapper

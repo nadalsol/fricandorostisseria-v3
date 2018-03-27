@@ -17,4 +17,10 @@
     // font-family: $ff-sans-serif-bold;
     line-height: 2;
   }
+
+  strong {
+    padding-left: $sp-base;
+    font-family: $ff-sans-serif-bold;
+    color: $c-brand-secondary;
+  }
 }
