@@ -19,7 +19,8 @@
 
 // Basic styling
 body {
-  margin-top: $body-offset;
+  margin-top: $body-offset-top;
+  margin-bottom: $body-offset-bottom;
   font-family: $ff-base;
   font-size: $fz-base;
   font-weight: $fw-base;
@@ -112,5 +113,9 @@ ul, ol, dl, figure {
 
   @media ($xlarge-up) {
     width: $screen-xl-min;
+  }
+
+  @media ($xxlarge-up) {
+    width: $screen-xxl-min;
   }
 }

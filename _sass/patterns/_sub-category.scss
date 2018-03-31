@@ -1,21 +1,26 @@
 // Sub-category
 // -----------------------------------------------------------------------------
+// Using a 3 column layout for sub-categories.
 
 
 .sub-category {
   float: left;
   width: 33.3333%;
+  padding-left: $sp-large;
+  padding-right: $sp-large;
+  margin-bottom: $sp-small;
   color: $c-light;
 
   &:nth-child(3n+1) {
     clear: left;
   }
 
-  p,
-  ul,
-  ol {
-    // font-family: $ff-sans-serif-bold;
-    line-height: 2;
+  li {
+    margin-bottom: $sp-xxsmall;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   strong {

@@ -70,12 +70,14 @@ $lh-base:                1.5 !default;
 $screen-sm-min:          480px !default;
 $screen-md-min:          768px !default;
 $screen-lg-min:          992px !default;
-$screen-xl-min:          1400px !default;
+$screen-xl-min:          1200px !default;
+$screen-xxl-min:         1440px !default;
 
 $small-up:               "min-width:#{$screen-sm-min}" !default;
 $medium-up:              "min-width:#{$screen-md-min}" !default;
 $large-up:               "min-width:#{$screen-lg-min}" !default;
 $xlarge-up:              "min-width:#{$screen-xl-min}" !default;
+$xxlarge-up:             "min-width:#{$screen-xxl-min}" !default;
 
 // Transitions
 $transition-color:       250ms color !default;
@@ -106,8 +108,9 @@ $footer-ht:              230px !default;
 $footer-bg:              $c-light !default;
 
 // Body offset
-$body-offset:            $header-ht !default; // floor($header-ht + $sp-medium) !default;
+$body-offset-top:        floor($header-ht + $sp-medium) !default;
+$body-offset-bottom:     $footer-ht !default;
 
 // Category
-$category-sp:            100px !default;
-$category-sp-last:       $footer-ht !default;
+$category-sp:            60px !default;
+$category-sp-last:       0 !default;
