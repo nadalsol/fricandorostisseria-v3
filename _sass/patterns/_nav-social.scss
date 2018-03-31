@@ -3,8 +3,13 @@
 
 
 .nav-social {
-  @include positioner(absolute, auto, auto, top, 12px, left, 0);
-  @include list-inline($sp-xxsmall, $sp-xxsmall);
+  @include list-inline-first-last($sp-xxsmall, $sp-xxsmall);
+  text-align: center;
+
+  @media ($medium-up) {
+    @include positioner(absolute, auto, auto, top, 12px, left, 0);
+    text-align: left;
+  }
 
   a {
     @include link($c-light, $c-light, $c-brand-primary);

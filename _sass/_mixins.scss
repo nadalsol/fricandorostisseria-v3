@@ -59,20 +59,19 @@
   list-style: none;
 }
 
-// // Turns list items into floated elements
-// @mixin list-float() {
-//   @include list-reset;
-//   @include clearfix;
-
-//   > li,
-//   > dt,
-//   > dd {
-//     float: left;
-//   }
-// }
-
 // Turns list items into inline-block
 @mixin list-inline($pdl: $sp-base, $pdr: $sp-base) {
+  @include list-reset;
+
+  > li {
+    display: inline-block;
+    padding-left: $pdl;
+    padding-right: $pdr;
+  }
+}
+
+// Turns list items into inline-block (remove padding form first and last items)
+@mixin list-inline-first-last($pdl: $sp-base, $pdr: $sp-base) {
   @include list-reset;
 
   > li {
@@ -89,17 +88,6 @@
     }
   }
 }
-
-// Positioner for horizontal and vertical centering
-// @mixin positioner-center($wd, $ht) {
-//   position: absolute;
-//   width: $wd;
-//   height: $ht;
-//   left: 50%;
-//   top: 50%;
-//   margin-left: -($wd / 2);
-//   margin-top: -($ht / 2);
-// }
 
 // Positioner
 @mixin positioner($po, $po-wd, $po-ht, $po-v-property, $po-v-value, $po-h-property, $po-h-value, $po-zi: auto) {
@@ -119,15 +107,6 @@
   left: 50%;
   margin-left: -($wd / 2);
 }
-
-// Positioner for vertical centering
-// @mixin positioner-center-v($wd, $ht) {
-//   position: absolute;
-//   width: $wd;
-//   height: $ht;
-//   top: 50%;
-//   margin-top: -($ht / 2);
-// }
 
 // Vertical gradient, from top to bottom
 // Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#222222+0,222222+10,222222+50,ffffff+51,ffffff+100&0+0,0+10,1+51
@@ -153,7 +132,7 @@
 // Links
 @mixin link($c, $c-visited, $c-hover) {
   color: $c;
-  transition: $transition-color;
+  transition: $transition-c;
 
   &:visited {
     color: $c-visited;

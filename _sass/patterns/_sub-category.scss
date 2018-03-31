@@ -5,11 +5,17 @@
 
 .sub-category {
   float: left;
-  width: 33.3333%;
-  padding-left: $sp-large;
-  padding-right: $sp-large;
+  width: 100%;
+  padding-left: $sp-xsmall;
+  padding-right: $sp-xsmall;
   margin-bottom: $sp-small;
   color: $c-light;
+
+  @media ($medium-up) {
+    width: 33.3333%;
+    padding-left: $sp-large;
+    padding-right: $sp-large;
+  }
 
   &:nth-child(3n+1) {
     clear: left;

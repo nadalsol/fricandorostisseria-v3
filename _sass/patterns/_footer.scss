@@ -3,26 +3,72 @@
 
 
 .footer {
-  @include positioner(fixed, $footer-wd, $footer-ht, bottom, 0, left, 0, 10);
-  @include gradient-vertical;
-  padding: $sp-xxlarge $sp-xxxlarge 0;
+  @include size($footer-wd, $footer-ht);
+  padding: $sp-small;
   font-family: $ff-sans-serif-bold;
-  line-height: 2;
+  background-color: $footer-bg;
+
+  @media ($medium-up) {
+    @include positioner(fixed, $footer-wd-medium-up, $footer-ht-medium-up, bottom, 0, left, 0, 10);
+    @include gradient-vertical;
+    padding: $sp-xxlarge $sp-xxxlarge 0;
+    line-height: 2;
+  }
 
   > .wrapper {
-    display: flex;
-    align-items: flex-end;
+    @media ($medium-up) {
+      display: flex;
+      align-items: flex-end;
+    }
   }
 
   &__col-l {
-    @include col(35%, left);
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(35%, left);
+    }
+
+    > p {
+      margin-bottom: 0;
+
+      @media ($medium-up) {
+        margin-bottom: $sp-small;
+      }
+    }
   }
 
   &__col-c {
-    @include col(30%, center);
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(30%, center);
+    }
+
+    .icon {
+      margin-top: $sp-small;
+      margin-bottom: $sp-small;
+
+      @media ($medium-up) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__col-r {
-    @include col(35%, right);
+    text-align: center;
+
+    @media ($medium-up) {
+      @include col(35%, right);
+    }
+
+    > p {
+      margin-bottom: 0;
+
+      @media ($medium-up) {
+        margin-bottom: $sp-small;
+      }
+    }
   }
 }

@@ -9,14 +9,6 @@
   box-sizing: border-box;
 }
 
-// Reset some basic elements
-// h1, h2, h3, h4, h5, h6,
-// p, blockquote, pre, hr,
-// dl, dd, ol, ul, figure {
-//   margin: 0;
-//   padding: 0;
-// }
-
 // Basic styling
 body {
   margin-top: $body-offset-top;
@@ -29,6 +21,11 @@ body {
   background: $body-bg-c url("#{$assets-path}/#{$body-bg-img}") no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
+
+  @media ($medium-up) {
+    margin-top: $body-offset-top-medium-up;
+    margin-bottom: $body-offset-bottom-medium-up;
+  }
 }
 
 // Headings

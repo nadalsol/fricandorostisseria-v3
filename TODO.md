@@ -6,18 +6,20 @@
 - [x] Add <title> attr. to `.svg` files.
 - [x] Refactor `.header` according to layout rules.
 - [x] Remove minima theme styles (CSS).
-- [ ] Remove minima theme?
-- [ ] Mobile styles (responsive).
+- [x] Remove none used font faces (if any).
+- [x] Mobile styles (responsive).
+- [ ] Create hamburger menu (mobile).
 - [ ] Solve `.heading-sub-category` background image issue.
-- [ ] Clean up none-used CSS (commented code).
+- [ ] Replace `.icon--small` and `.icon--large` icons and sizes (take a look at
+  `_icons.scss`).
 - [ ] Add `is-active` class to menu items: https://help.shopify.com/themes/liquid/filters/html-filters#script_tag
+- [ ] Add `is-opaque` class to `header__nav`, when scroll > 0.
+- [ ] Clean up none-used CSS (commented code).
+- [ ] Remove minima theme?
 - [ ] Change default locale from EN to ES.
 - [ ] Move collections to specific folder: https://jekyllrb.com/docs/collections/
 - [ ] Autoprefixer.
 - [ ] Minify, uglify, unify CSS/JS files.
-- [ ] Replace `.icon--small` and `.icon--large` icons and sizes (take a look at
-  `_icons.scss`).
-- [ ] Remove none used font faces (if any).
-- [ ] Remove vendor-prefixes from `@mixin gradient-vertical`?
+- [ ] Remove vendor-prefixes from `@mixin gradient-vertical` (if necessary).
 - [ ] Check printed version.
 - [ ] Create new admin user (Rut): https://fricandorostisseria.admin.datocms.com/admin/users

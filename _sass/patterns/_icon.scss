@@ -44,5 +44,9 @@
 
 // brand
 .icon--brand {
-  @include size(339px, 91px);
+  @include size($header-brand-icon-wd, $header-brand-icon-ht);
+
+  @media ($medium-up) {
+    @include size($header-brand-icon-wd-medium-up, $header-brand-icon-ht-medium-up);
+  }
 }

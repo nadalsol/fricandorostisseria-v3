@@ -5,15 +5,36 @@
 .header {
   @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0, 10);
 
+  @media ($medium-up) {
+    @include size($header-wd-medium-up, $header-ht-medium-up);
+  }
+
   &__brand {
     @include size($header-brand-wd, $header-brand-ht);
     padding: $header-brand-pd;
     background-color: $header-brand-bg;
+
+    @media ($medium-up) {
+      @include size($header-brand-wd-medium-up, $header-brand-ht-medium-up);
+      padding: $header-brand-pd-medium-up;
+    }
   }
 
   &__nav {
     @include size($header-nav-wd, $header-nav-ht);
+    display: none;
     background-color: $header-nav-bg;
     overflow: hidden;
+    transition: $transition-bgc;
+
+    @media ($medium-up) {
+      @include size($header-nav-wd-medium-up, $header-nav-ht-medium-up);
+      display: block;
+      background-color: $header-nav-bg-medium-up;
+    }
+
+    &.is-opaque {
+      background-color: $header-nav-bg-opaque;
+    }
   }
 }

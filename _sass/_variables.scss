@@ -38,14 +38,15 @@ $link-c-hover:           lighten($link-c, 15%) !default;
 // Spacing units
 $sp-base:                5px !default;
 
-$sp-xxsmall:             floor($sp-base * 2) !default; // 10px
-$sp-xsmall:              floor($sp-base * 3) !default; // 15px
-$sp-small:               floor($sp-base * 4) !default; // 20px
-$sp-medium:              floor($sp-base * 5) !default; // 25px
-$sp-large:               floor($sp-base * 6) !default; // 30px
-$sp-xlarge:              floor($sp-base * 7) !default; // 35px
-$sp-xxlarge:             floor($sp-base * 8) !default; // 40px
-$sp-xxxlarge:            floor($sp-base * 9) !default; // 45px
+$sp-xxsmall:             floor($sp-base * 2) !default;  // 10px
+$sp-xsmall:              floor($sp-base * 3) !default;  // 15px
+$sp-small:               floor($sp-base * 4) !default;  // 20px
+$sp-medium:              floor($sp-base * 5) !default;  // 25px
+$sp-large:               floor($sp-base * 6) !default;  // 30px
+$sp-xlarge:              floor($sp-base * 7) !default;  // 35px
+$sp-xxlarge:             floor($sp-base * 8) !default;  // 40px
+$sp-xxxlarge:            floor($sp-base * 9) !default;  // 45px
+$sp-huge:                floor($sp-base * 12) !default; // 60px
 
 // Fonts
 $fonts-path:             "/fonts" !default;
@@ -80,37 +81,53 @@ $xlarge-up:              "min-width:#{$screen-xl-min}" !default;
 $xxlarge-up:             "min-width:#{$screen-xxl-min}" !default;
 
 // Transitions
-$transition-color:       250ms color !default;
+$transition-c:           color 250ms !default;
+$transition-bgc:         background-color 250ms !default;
 
 
 // Patterns
 // -----------------------------------------------------------------------------
 
 // Header
-$header-brand-img-wd:    339px !default;
-$header-brand-img-ht:    91px !default;
+$header-brand-icon-wd:           170px !default;
+$header-brand-icon-ht:           46px !default;
+$header-brand-icon-wd-medium-up: 339px !default;
+$header-brand-icon-ht-medium-up: 91px !default;
 
-$header-brand-pd:        $sp-medium !default;
-$header-brand-wd:        100% !default;
-$header-brand-ht:        floor($header-brand-img-ht + ($header-brand-pd * 2)) !default;
-$header-brand-bg:        $c-light !default;
+$header-brand-pd:                $sp-xsmall !default;
+$header-brand-wd:                100% !default;
+$header-brand-ht:                floor($header-brand-icon-ht + ($header-brand-pd * 2)) !default;
+$header-brand-pd-medium-up:      $sp-medium !default;
+$header-brand-wd-medium-up:      $header-brand-wd !default;
+$header-brand-ht-medium-up:      floor($header-brand-icon-ht-medium-up + ($header-brand-pd-medium-up * 2)) !default;
+$header-brand-bg:                $c-light !default;
 
-$header-nav-wd:          100% !default;
-$header-nav-ht:          60px !default;
-$header-nav-bg:          rgba(0, 0, 0, .3) !default;
+$header-nav-wd:                  100% !default;
+$header-nav-ht:                  auto !default;
+$header-nav-bg:                  $c-dark !default;
+$header-nav-wd-medium-up:        $header-nav-wd !default;
+$header-nav-ht-medium-up:        $sp-huge !default;
+$header-nav-bg-medium-up:        rgba(0, 0, 0, .3) !default;
+$header-nav-bg-opaque:           $header-nav-bg !default;
 
-$header-wd:              100% !default;
-$header-ht:              floor($header-brand-ht + $header-nav-ht) !default;
+$header-wd:                      100% !default;
+$header-ht:                      $header-brand-ht !default;
+$header-wd-medium-up:            $header-wd !default;
+$header-ht-medium-up:            floor($header-brand-ht-medium-up + $header-nav-ht-medium-up) !default;
 
 // Footer
-$footer-wd:              100% !default;
-$footer-ht:              230px !default;
-$footer-bg:              $c-light !default;
+$footer-wd:                      100% !default;
+$footer-ht:                      auto !default;
+$footer-wd-medium-up:            $footer-wd !default;
+$footer-ht-medium-up:            230px !default;
+$footer-bg:                      $c-light !default;
 
 // Body offset
-$body-offset-top:        floor($header-ht + $sp-medium) !default;
-$body-offset-bottom:     $footer-ht !default;
+$body-offset-top:                floor($header-ht + $sp-medium) !default;
+$body-offset-bottom:             0 !default;
+$body-offset-top-medium-up:      floor($header-ht-medium-up + $sp-medium) !default;
+$body-offset-bottom-medium-up:   $footer-ht-medium-up !default;
 
 // Category
-$category-sp:            60px !default;
-$category-sp-last:       0 !default;
+$category-sp:                    $sp-huge !default;
+$category-sp-last:               0 !default;
