@@ -109,10 +109,10 @@ ul, ol, dl, figure {
   width: 100%;
 
   @media ($xlarge-up) {
-    width: $screen-xl-min;
+    width: floor($screen-xl-min - ($footer-pd-medium-up * 2));
   }
 
   @media ($xxlarge-up) {
-    width: $screen-xxl-min;
+    width: floor($screen-xxl-min - ($footer-pd-medium-up * 2));
   }
 }

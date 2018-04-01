@@ -4,14 +4,14 @@
 
 .footer {
   @include size($footer-wd, $footer-ht);
-  padding: $sp-small;
+  padding: $footer-pd;
   font-family: $ff-sans-serif-bold;
   background-color: $footer-bg;
 
   @media ($medium-up) {
     @include positioner(fixed, $footer-wd-medium-up, $footer-ht-medium-up, bottom, 0, left, 0, 10);
     @include gradient-vertical;
-    padding: $sp-xxlarge $sp-xxxlarge 0;
+    padding: $sp-xxlarge $footer-pd-medium-up 0;
     line-height: 2;
   }
 

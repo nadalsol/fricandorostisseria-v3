@@ -118,8 +118,10 @@ $header-ht-medium-up:            floor($header-brand-ht-medium-up + $header-nav-
 // Footer
 $footer-wd:                      100% !default;
 $footer-ht:                      auto !default;
+$footer-pd:                      $sp-small !default;
 $footer-wd-medium-up:            $footer-wd !default;
 $footer-ht-medium-up:            230px !default;
+$footer-pd-medium-up:            $sp-xxxlarge !default;
 $footer-bg:                      $c-light !default;
 
 // Body offset
