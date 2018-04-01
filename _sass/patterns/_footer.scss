@@ -46,11 +46,9 @@
     }
 
     .icon {
-      margin-top: $sp-small;
       margin-bottom: $sp-small;
 
       @media ($medium-up) {
-        margin-top: 0;
         margin-bottom: 0;
       }
     }

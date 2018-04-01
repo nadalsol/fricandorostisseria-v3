@@ -24,7 +24,7 @@
 //
 // address
 .icon--small {
-  @include size(13px, 19px); // TODO : to be modified (final size: 19px, 19px)
+  @include size(13px, 19px);
 }
 
 // social
@@ -34,7 +34,7 @@
 
 // call us
 .icon--large {
-  @include size(176px, 171px); // TODO : to be modified (final size: 176px, 176px)
+  @include size(176px, 176px);
 }
 
 // category
