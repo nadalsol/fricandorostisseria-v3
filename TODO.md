@@ -9,7 +9,7 @@
 - [x] Remove none used font faces (if any).
 - [x] Mobile styles (responsive).
 - [ ] Create hamburger menu (mobile).
-- [ ] Solve `.heading-sub-category` background image issue.
+- [x] Solve `.heading-sub-category` background image issue.
 - [ ] Replace `.icon--small` and `.icon--large` icons and sizes (take a look at
   `_icons.scss`).
 - [ ] Add `is-active` class to menu items: https://help.shopify.com/themes/liquid/filters/html-filters#script_tag
