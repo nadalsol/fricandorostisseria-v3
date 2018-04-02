@@ -9,15 +9,14 @@
 - [x] Refactor `.header` according to layout rules.
 - [x] Remove minima theme styles (CSS).
 - [x] Remove none used font faces (if any).
-- [x] Replace `.icon--small` and `.icon--large` icons and sizes (take a look at
-  `_icons.scss`).
+- [x] Replace `.icon--small` and `.icon--large` icons and sizes (take a look at `_icons.scss`).
 - [x] Mobile styles (responsive).
 - [x] Clean up none-used CSS (commented code).
-- [ ] Create hamburger menu (mobile).
+- [x] Minify, uglify, unify CSS files.
+- [ ] Create hamburger menu (mobile), and behaviour (JS).
 - [ ] Add `is-active` class to menu items: https://help.shopify.com/themes/liquid/filters/html-filters#script_tag
 - [ ] Add `is-opaque` class to `header__nav`, when scroll > 0.
-- [x] Minify, uglify, unify CSS files.
-- [ ] Minify, uglify, unify JS files.
+- [ ] Animate scroll towards category point (JS).
 - [ ] Create new admin user (Rut): https://fricandorostisseria.admin.datocms.com/admin/users
 
 ## Bugs
@@ -29,9 +28,12 @@
 
 ## Improvements (optional)
 
-- [ ] Remove minima theme?
+- [ ] Minify, uglify, unify JS files: https://github.com/matthodan/jekyll-asset-pipeline
+- [ ] Replace jQuery for Vanilla JS code.
+- [ ] Remove minima theme: https://jekyllrb.com/docs/themes/#converting-gem-based-themes-to-regular-themes
 - [ ] Change default locale from EN to ES.
 - [ ] Move collections to specific folder: https://jekyllrb.com/docs/collections/
 - [ ] Autoprefixer.
 - [ ] Remove vendor-prefixes from `@mixin gradient-vertical` (if necessary).
 - [ ] Check printed version.
+- [ ] 404 page styles.

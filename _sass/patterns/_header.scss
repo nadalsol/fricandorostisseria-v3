@@ -22,19 +22,29 @@
 
   &__nav {
     @include size($header-nav-wd, $header-nav-ht);
-    display: none;
     background-color: $header-nav-bg;
     overflow: hidden;
     transition: $transition-bgc;
 
     @media ($medium-up) {
       @include size($header-nav-wd-medium-up, $header-nav-ht-medium-up);
-      display: block;
       background-color: $header-nav-bg-medium-up;
     }
 
     &.is-opaque {
       background-color: $header-nav-bg-opaque;
     }
+  }
+
+  &__hamburger {
+    @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, $sp-small, right, $sp-xsmall, 11);
+    padding: $header-hamburger-pd;
+    font-size: $header-hamburger-fz;
+    line-height: 1;
+    color: $header-hamburger-c;
+    background: none;
+    border: 0;
+    outline: none;
+    cursor: pointer;
   }
 }

@@ -28,11 +28,15 @@
 }
 
 // Responsive image
-// Keep images from scaling beyond the width of their parents.
+// Keep images from scaling beyond the width of their parents
+//
+// 1. Set a maximum relative to the parent
+// 2. Scale the height according to the width, otherwise you get stretching
+//
 @mixin img-responsive($dp: block) {
   display: $dp;
-  max-width: 100%; // Part 1: Set a maximum relative to the parent
-  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+  max-width: 100%; // 1
+  height: auto; // 2
 }
 
 // Sizing shortcuts
@@ -109,7 +113,8 @@
 }
 
 // Vertical gradient, from top to bottom
-// Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#222222+0,222222+10,222222+50,ffffff+51,ffffff+100&0+0,0+10,1+51
+// Permalink - use to edit and share this gradient:
+// http://colorzilla.com/gradient-editor/#222222+0,222222+10,222222+50,ffffff+51,ffffff+100&0+0,0+10,1+51
 //
 // 1. FF3.6-15
 // 2. Chrome10-25,Safari5.1-6
