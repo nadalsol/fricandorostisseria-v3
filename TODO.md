@@ -13,7 +13,7 @@
 - [x] Mobile styles (responsive).
 - [x] Clean up none-used CSS (commented code).
 - [x] Minify, uglify, unify CSS files.
-- [ ] Create hamburger menu (mobile), and behaviour (JS).
+- [x] Create hamburger menu (mobile), and behaviour (JS).
 - [ ] Add `is-active` class to menu items: https://help.shopify.com/themes/liquid/filters/html-filters#script_tag
 - [ ] Add `is-opaque` class to `header__nav`, when scroll > 0.
 - [ ] Animate scroll towards category point (JS).
