@@ -25,8 +25,7 @@ $(document).ready(function() {
     });
   }
 
-  jsNavMainLink.click(function(event) {
-    event.preventDefault();
+  jsNavMainLink.click(function() {
     // Remove all `is-active` classes
     removeAllIsActive(jsNavMainLink);
     // Add `is-active` class to clicked item only

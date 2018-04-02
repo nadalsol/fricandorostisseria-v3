@@ -25,6 +25,7 @@
   with `background-size: contain` and truncate text (single line).
 - [ ] "Llámanos" is not visible in "call-us.png", because is white text over
   white background (small devices only).
+- [ ] favicon.ico is missing.
 
 ## Improvements (optional)
 
