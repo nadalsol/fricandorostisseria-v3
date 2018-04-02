@@ -14,8 +14,8 @@
 - [x] Clean up none-used CSS (commented code).
 - [x] Minify, uglify, unify CSS files.
 - [x] Create hamburger menu (mobile), and behaviour (JS).
-- [ ] Add `is-active` class to menu items: https://help.shopify.com/themes/liquid/filters/html-filters#script_tag
-- [ ] Add `is-opaque` class to `header__nav`, when scroll > 0.
+- [x] Add `is-active` class to menu items: https://help.shopify.com/themes/liquid/filters/html-filters#script_tag
+- [x] Add `is-opaque` class to `header__nav`, when scroll > 0.
 - [ ] Animate scroll towards category point (JS).
 - [ ] Create new admin user (Rut): https://fricandorostisseria.admin.datocms.com/admin/users
 

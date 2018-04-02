@@ -4,12 +4,16 @@
  */
 $(document).ready(function() {
 
+  var headerHamburger = $('#header-hamburger'),
+      headerNav = $('#header-nav'),
+      jsNavMainLink = $('.js-nav-main-link');
+
   /**
    * Toggle `header-nav` visibility, via hamburger menu
    */
-  $('#header-hamburger').click(function(event) {
+  headerHamburger.click(function(event) {
     event.preventDefault();
-    $('#header-nav').toggleClass('is-small-hidden');
+    headerNav.toggleClass('is-small-hidden');
   });
 
   /**
@@ -21,12 +25,30 @@ $(document).ready(function() {
     });
   }
 
-  $('.js-nav-main-link').click(function(event) {
+  jsNavMainLink.click(function(event) {
     event.preventDefault();
     // Remove all `is-active` classes
-    removeAllIsActive('.js-nav-main-link');
+    removeAllIsActive(jsNavMainLink);
     // Add `is-active` class to clicked item only
     $(this).addClass('is-active');
+  });
+
+  /**
+   * Add/remove `is-opaque` class for `header-nav`
+   */
+  var toggleIsOpaque = function() {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > 0) {
+      headerNav.addClass('is-opaque');
+    } else {
+      headerNav.removeClass('is-opaque');
+    }
+  };
+
+  toggleIsOpaque();
+
+  $(window).scroll(function() {
+    toggleIsOpaque();
   });
 
 });
