@@ -135,16 +135,20 @@
 }
 
 // Links
-@mixin link($c, $c-visited, $c-hover) {
+@mixin link($c, $c-hover) {
   color: $c;
   transition: $transition-c;
 
   &:visited {
-    color: $c-visited;
+    color: $c;
   }
 
   &:hover {
     color: $c-hover;
+  }
+
+  &:active {
+    color: $c;
   }
 }
 

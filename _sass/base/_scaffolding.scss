@@ -74,7 +74,7 @@ img {
 
 // Links
 a {
-  @include link($link-c, $link-c, $link-c-hover);
+  @include link($link-c, $link-c-hover);
   text-decoration: none;
 
   &:focus {

@@ -3,7 +3,7 @@
 
 
 .address {
-  @include link($c-dark, $c-dark, $c-brand-primary);
+  @include link($c-dark, $c-brand-primary);
 
   > span {
     text-decoration: underline;

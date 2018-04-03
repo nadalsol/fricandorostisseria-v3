@@ -16,7 +16,7 @@
   }
 
   &__link {
-    @include link($c-light, $c-light, $c-brand-primary);
+    @include link($c-light, $c-brand-primary);
     display: block;
     padding: $sp-base;
 
