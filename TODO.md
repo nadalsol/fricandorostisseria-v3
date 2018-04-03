@@ -16,6 +16,7 @@
 - [x] Create hamburger menu (mobile), and behaviour (JS).
 - [x] Add `is-active` class to menu items: https://help.shopify.com/themes/liquid/filters/html-filters#script_tag
 - [x] Add `is-opaque` class to `header__nav`, when scroll > 0.
+- [x] Close `header-nav` on click `js-nav-main-link` item.
 - [ ] Animate scroll towards category point (JS).
 - [ ] Create new admin user (Rut): https://fricandorostisseria.admin.datocms.com/admin/users
 

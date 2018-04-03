@@ -17,7 +17,7 @@ $(document).ready(function() {
   });
 
   /**
-   * Add/remove `is-active` class for `js-nav-main-link` items
+   * Manage `is-active` state for `js-nav-main-link` items
    */
   function removeAllIsActive(selector) {
     $(selector).each(function() {
@@ -30,10 +30,12 @@ $(document).ready(function() {
     removeAllIsActive(jsNavMainLink);
     // Add `is-active` class to clicked item only
     $(this).addClass('is-active');
+    // Hide `header-nav`
+    headerNav.addClass('is-small-hidden');
   });
 
   /**
-   * Add/remove `is-opaque` class for `header-nav`
+   * Manage `is-opaque` state for `header-nav`
    */
   var toggleIsOpaque = function() {
     var scrollTop = $(window).scrollTop();
