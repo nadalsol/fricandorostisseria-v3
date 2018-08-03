@@ -40,7 +40,7 @@
     @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, $sp-small, right, $sp-xsmall, 11);
     padding: $header-hamburger-pd;
     font-size: $header-hamburger-fz;
-    line-height: 1;
+    line-height: $lh-small;
     color: $header-hamburger-c;
     background: none;
     border: 0;
