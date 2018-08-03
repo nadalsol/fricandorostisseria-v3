@@ -18,12 +18,12 @@ email: hola@fricandorostisseria.com
 description: >- # this means to ignore newlines until "baseurl:"
   Comida casera para llevar. Tu tienda de platos cocinados en Lloreda,
   Badalona (Barcelona).
-  Tel. 670 298 42 / 93 399 44 24.
+  Tel. 670 298 425 / 93 399 44 24.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://fricandorostisseria.com" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
-# github_username: jekyll
-# locale: es_ES
+twitter_username: fricandorostisseria
+github_username: nadalsol
+lang: es
 
 # Build settings
 markdown: kramdown
