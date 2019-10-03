@@ -50,9 +50,6 @@ collections:
   comidas:
     output: true
     permalink: /comidas/:path/
-  cenas:
-    output: true
-    permalink: /cenas/:path/
   bebidas:
     output: true
     permalink: /bebidas/:path/

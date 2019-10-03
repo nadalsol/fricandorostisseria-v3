@@ -11,18 +11,6 @@ directory "_comidas" do
     end
   end
 end
-directory "_cenas" do
-  dato.cenas.each do |item|
-    create_post "#{item.title.parameterize}.md" do
-      frontmatter :yaml, {
-        layout: "home",
-        title: item.title,
-        order: item.order
-      }
-      content item.description
-    end
-  end
-end
 directory "_bebidas" do
   dato.bebidas.each do |item|
     create_post "#{item.title.parameterize}.md" do

@@ -1,20 +1,18 @@
 // Social navigation
 // -----------------------------------------------------------------------------
 
-
 .nav-social {
   @include list-inline-first-last($sp-xxsmall, $sp-xxsmall);
-  padding: $sp-base $sp-xxsmall $sp-xsmall;
+  margin-bottom: 10px;
   text-align: center;
 
   @media ($medium-up) {
-    @include positioner(absolute, auto, auto, top, 12px, left, 0);
-    padding: 0;
+    margin-bottom: 30px;
     text-align: left;
   }
 
   a {
-    @include link($c-light, $c-brand-primary);
+    @include link($c-dark, $c-brand-primary);
     display: block;
   }
 }

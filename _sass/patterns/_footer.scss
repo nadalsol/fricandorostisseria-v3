@@ -1,7 +1,6 @@
 // Footer
 // -----------------------------------------------------------------------------
 
-
 .footer {
   @include size($footer-wd, $footer-ht);
   padding: $footer-pd;
@@ -9,7 +8,16 @@
   background-color: $footer-bg;
 
   @media ($medium-up) {
-    @include positioner(fixed, $footer-wd-medium-up, $footer-ht-medium-up, bottom, 0, left, 0, 10);
+    @include positioner(
+      fixed,
+      $footer-wd-medium-up,
+      $footer-ht-medium-up,
+      bottom,
+      0,
+      left,
+      0,
+      10
+    );
     @include gradient-vertical;
     padding: $sp-xxlarge $footer-pd-medium-up 0;
     line-height: $lh-large;
@@ -27,14 +35,6 @@
 
     @media ($medium-up) {
       @include col(35%, left);
-    }
-
-    > p {
-      margin-bottom: 0;
-
-      @media ($medium-up) {
-        margin-bottom: $sp-small;
-      }
     }
   }
 
