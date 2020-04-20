@@ -10,7 +10,10 @@
 
 // Basic styling
 body {
-  padding-bottom: $body-offset-bottom;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
   font-family: $ff-base;
   font-size: $fz-base;
   font-weight: $fw-base;
@@ -20,10 +23,6 @@ body {
     top;
   background-size: cover;
   background-attachment: fixed;
-
-  @media ($medium-up) {
-    padding-bottom: $body-offset-bottom-medium-up;
-  }
 }
 
 // Headings
@@ -96,6 +95,7 @@ ol {
 // Default value of `display` of `main` element is 'inline' in IE 11
 main {
   display: block;
+  flex: 1 0 auto;
 }
 
 // Vertical rhythm

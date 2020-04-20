@@ -8,16 +8,7 @@
   background-color: $footer-bg;
 
   @media ($medium-up) {
-    @include positioner(
-      fixed,
-      $footer-wd-medium-up,
-      $footer-ht-medium-up,
-      bottom,
-      0,
-      left,
-      0,
-      10
-    );
+    @include size($footer-wd-medium-up, $footer-ht-medium-up);
     @include gradient-vertical;
     padding: $sp-xxlarge $footer-pd-medium-up 0;
     line-height: $lh-large;

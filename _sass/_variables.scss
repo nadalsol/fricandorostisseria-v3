@@ -138,10 +138,6 @@ $footer-ht-medium-up: 230px !default;
 $footer-pd-medium-up: $sp-xxxlarge !default;
 $footer-bg: $c-light !default;
 
-// Body offset
-$body-offset-bottom: 0 !default;
-$body-offset-bottom-medium-up: $footer-ht-medium-up !default;
-
 // Category
 $category-sp: floor($header-ht + $sp-medium) !default;
 $category-sp-medium-up: floor($header-ht-medium-up + $sp-medium) !default;
