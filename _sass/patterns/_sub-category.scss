@@ -2,13 +2,12 @@
 // -----------------------------------------------------------------------------
 // Using a 3 column layout for sub-categories.
 
-
 .sub-category {
   float: left;
   width: 100%;
   padding-left: $sp-xsmall;
   padding-right: $sp-xsmall;
-  margin-bottom: $sp-small;
+  margin-top: $sp-small;
   color: $c-light;
 
   @media ($medium-up) {
@@ -17,7 +16,7 @@
     padding-right: $sp-large;
   }
 
-  &:nth-child(3n+1) {
+  &:nth-child(3n + 1) {
     clear: left;
   }
 

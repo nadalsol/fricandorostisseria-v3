@@ -1,7 +1,6 @@
 // Scaffolding
 // -----------------------------------------------------------------------------
 
-
 // Reset box-sizing
 *,
 *:before,
@@ -11,25 +10,29 @@
 
 // Basic styling
 body {
-  margin-top: $body-offset-top;
-  margin-bottom: $body-offset-bottom;
+  padding-bottom: $body-offset-bottom;
   font-family: $ff-base;
   font-size: $fz-base;
   font-weight: $fw-base;
   line-height: $lh-base;
   color: $text-c;
-  background: $body-bg-c url("#{$assets-path}/#{$body-bg-img}") no-repeat center top;
+  background: $body-bg-c url("#{$assets-path}/#{$body-bg-img}") no-repeat center
+    top;
   background-size: cover;
   background-attachment: fixed;
 
   @media ($medium-up) {
-    margin-top: $body-offset-top-medium-up;
-    margin-bottom: $body-offset-bottom-medium-up;
+    padding-bottom: $body-offset-bottom-medium-up;
   }
 }
 
 // Headings
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $ff-serif;
   font-weight: $fw-base;
   line-height: $lh-base;
@@ -83,7 +86,8 @@ a {
 }
 
 // Lists
-ul, ol {
+ul,
+ol {
   margin-left: 0;
   padding-left: $sp-small;
 }
@@ -96,9 +100,19 @@ main {
 
 // Vertical rhythm
 // Set `margin-bottom` to maintain vertical rhythm
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure {
   @include vertical-rhythm;
 }
 
