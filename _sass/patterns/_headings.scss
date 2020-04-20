@@ -1,7 +1,6 @@
 // Headings
 // -----------------------------------------------------------------------------
 
-
 .heading-brand {
   margin-bottom: 0;
   text-align: center;
@@ -12,7 +11,7 @@
 }
 
 .heading-category {
-  margin-bottom: $sp-large;
+  margin-bottom: $sp-xxsmall;
   text-align: center;
 }
 
@@ -21,6 +20,7 @@
   padding-left: $sp-large;
   padding-right: $sp-large;
   line-height: $lh-medium;
-  background: url("#{$assets-path}/bg-heading-sub-category.png") no-repeat center center;
+  background: url("#{$assets-path}/bg-heading-sub-category.png") no-repeat
+    center center;
   background-size: cover;
 }

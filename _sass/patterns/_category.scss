@@ -1,12 +1,11 @@
 // Category
 // -----------------------------------------------------------------------------
 
-
 .category {
-  margin-bottom: $category-sp;
+  padding-top: $category-sp;
 
-  &:last-child {
-    margin-bottom: $category-sp-last;
+  @media ($medium-up) {
+    padding-top: $category-sp-medium-up;
   }
 
   &__content {
