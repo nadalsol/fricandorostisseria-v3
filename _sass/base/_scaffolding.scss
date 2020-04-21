@@ -19,10 +19,14 @@ body {
   font-weight: $fw-base;
   line-height: $lh-base;
   color: $text-c;
-  background: $body-bg-c url("#{$assets-path}/#{$body-bg-img}") no-repeat center
+  background: $body-bg-c url("#{$assets-path}/#{$body-bg-img}") repeat center
     top;
   background-size: cover;
-  background-attachment: fixed;
+
+  @media ($medium-up) {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
 
 // Headings
