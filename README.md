@@ -149,27 +149,10 @@ Dashboards:
 
 ## 7. Authors
 
-This project has been designed and developed by 🎩 🐧 [Mr. Puffin Studio](http://mrpuffin.studio/), a communication studio based in Vilassar de Mar, Barcelona.
+This project has been designed and developed by 🎩 🐧 [Mr. Puffin Studio](http://mrpuffin.studio/)
 
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top">
-        <img width="150" height="150" src="https://github.com/nadalsol.png?s=150">
-        <br>
-        <a href="https://github.com/nadalsol">Nadal Soler</a>
-        <p>@nadalsol</p>
-        <br>
-        <p>Front-end Web Developer</p>
-      </td>
-      <td align="center" valign="top">
-        <img width="150" height="150" src="https://media-exp1.licdn.com/dms/image/C4D03AQHVUkiBSwhD_w/profile-displayphoto-shrink_800_800/0/1635326262041?e=1646870400&v=beta&t=1kxTKIZFu7OQ8T1WNe-lbl1ztR5wUGy0PpRTZ2fJbx4">
-        <br>
-        <a href="https://www.linkedin.com/in/miriamsoto/">Miriam Soto</a>
-        <p>@coolcolors</p>
-        <br>
-        <p>Senior UI & Visual Designer / Creative Director</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| <img width="150" height="150" src="https://github.com/nadalsol.png?s=150"> | <img width="150" height="150" src="https://bit.ly/3sUi187"> |
+| -------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| [Nadal Soler](https://github.com/nadalsol)                                 | [Miriam Soto](https://www.linkedin.com/in/miriamsoto)       |
+| @nadalsol                                                                  | @coolcolors                                                 |
+| UI / Front-end Developer                                                   | UI & Brand Designer                                         |
