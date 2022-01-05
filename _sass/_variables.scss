@@ -14,130 +14,128 @@
 // -----------------------------------------------------------------------------
 
 // Colors
-$c-dark: #000 !default;
-$c-dark-soft: #333 !default;
-$c-neutral: #666 !default;
-$c-light-soft: #999 !default;
-$c-light: #fff !default;
+$c-dark: #000;
+$c-dark-soft: #333;
+$c-neutral: #666;
+$c-light-soft: #f2f2f2;
+$c-light: #fff;
 
-$c-brand-primary: #ff4e18 !default;
-$c-brand-secondary: #ffb500 !default;
+$c-brand-primary: #ff4e18;
+$c-brand-secondary: #ffb500;
 
 // Scaffolding
-$assets-path: "/assets" !default;
+$assets-path: "/assets";
 
-$body-bg-c: #494c5b !default;
-$body-bg-img: "bg-body.jpg" !default;
+$body-bg-c: #494c5b;
+$body-bg-img: "bg-body.jpg";
 
-$text-c: $c-dark !default;
+$text-c: $c-dark;
 
-$link-c: $c-brand-primary !default;
-$link-c-hover: lighten($link-c, 15%) !default;
+$link-c: $c-brand-primary;
+$link-c-hover: lighten($link-c, 15%);
 
 // Spacing units
-$sp-base: 5px !default;
+$sp-base: 5px;
 
-$sp-xxsmall: floor($sp-base * 2) !default; // 10px
-$sp-xsmall: floor($sp-base * 3) !default; // 15px
-$sp-small: floor($sp-base * 4) !default; // 20px
-$sp-medium: floor($sp-base * 5) !default; // 25px
-$sp-large: floor($sp-base * 6) !default; // 30px
-$sp-xlarge: floor($sp-base * 7) !default; // 35px
-$sp-xxlarge: floor($sp-base * 8) !default; // 40px
-$sp-xxxlarge: floor($sp-base * 9) !default; // 45px
-$sp-huge: floor($sp-base * 12) !default; // 60px
+$sp-xxsmall: floor($sp-base * 2); // 10px
+$sp-xsmall: floor($sp-base * 3); // 15px
+$sp-small: floor($sp-base * 4); // 20px
+$sp-medium: floor($sp-base * 5); // 25px
+$sp-large: floor($sp-base * 6); // 30px
+$sp-xlarge: floor($sp-base * 7); // 35px
+$sp-xxlarge: floor($sp-base * 8); // 40px
+$sp-xxxlarge: floor($sp-base * 9); // 45px
+$sp-huge: floor($sp-base * 12); // 60px
 
 // Fonts
-$fonts-path: "/fonts" !default;
+$fonts-path: "/fonts";
 
-$ff-sans-serif: "nexa_lightregular", Arial, Helvetica, sans-serif !default;
-$ff-sans-serif-bold: "nexa_boldregular", Arial, Helvetica, sans-serif !default;
-$ff-serif: "ITC American Typewriter Bold", "Courier New", Courier, monospace !default;
-$ff-base: $ff-sans-serif !default;
+$ff-sans-serif: "nexa_lightregular", Arial, Helvetica, sans-serif;
+$ff-sans-serif-bold: "nexa_boldregular", Arial, Helvetica, sans-serif;
+$ff-serif: "ITC American Typewriter Bold", "Courier New", Courier, monospace;
+$ff-base: $ff-sans-serif;
 
-$fz-base: 14px !default;
-$fz-xsmall: 11px !default;
-$fz-small: 12px !default;
-$fz-medium: 16px !default;
-$fz-large: 18px !default;
-$fz-xlarge: 20px !default;
-$fz-xxlarge: 24px !default;
+$fz-base: 14px;
+$fz-xsmall: 11px;
+$fz-small: 12px;
+$fz-medium: 16px;
+$fz-large: 18px;
+$fz-xlarge: 20px;
+$fz-xxlarge: 24px;
 
-$fw-base: 400 !default;
+$fw-base: 400;
 
-$lh-base: 1.5 !default;
-$lh-small: 1 !default;
-$lh-medium: 1.75 !default;
-$lh-large: 2 !default;
+$lh-base: 1.5;
+$lh-small: 1;
+$lh-medium: 1.75;
+$lh-large: 2;
 
 // Media queries
-$screen-sm-min: 480px !default;
-$screen-md-min: 768px !default;
-$screen-lg-min: 992px !default;
-$screen-xl-min: 1200px !default;
-$screen-xxl-min: 1440px !default;
+$screen-sm-min: 480px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+$screen-xxl-min: 1440px;
 
-$small-up: "min-width:#{$screen-sm-min}" !default;
-$medium-up: "min-width:#{$screen-md-min}" !default;
-$large-up: "min-width:#{$screen-lg-min}" !default;
-$xlarge-up: "min-width:#{$screen-xl-min}" !default;
-$xxlarge-up: "min-width:#{$screen-xxl-min}" !default;
+$small-up: "min-width:#{$screen-sm-min}";
+$medium-up: "min-width:#{$screen-md-min}";
+$large-up: "min-width:#{$screen-lg-min}";
+$xlarge-up: "min-width:#{$screen-xl-min}";
+$xxlarge-up: "min-width:#{$screen-xxl-min}";
 
 // Transitions
-$transition-c: color 250ms !default;
-$transition-bgc: background-color 250ms !default;
+$transition-c: color 250ms;
+$transition-bgc: background-color 250ms;
 
 // Patterns
 // -----------------------------------------------------------------------------
 
 // Header
-$header-brand-icon-wd: 170px !default;
-$header-brand-icon-ht: 46px !default;
-$header-brand-icon-wd-medium-up: 339px !default;
-$header-brand-icon-ht-medium-up: 91px !default;
+$header-brand-icon-wd: 170px;
+$header-brand-icon-ht: 46px;
+$header-brand-icon-wd-medium-up: 339px;
+$header-brand-icon-ht-medium-up: 91px;
 
-$header-brand-pd: $sp-xsmall !default;
-$header-brand-wd: 100% !default;
-$header-brand-ht: floor(
-  $header-brand-icon-ht + ($header-brand-pd * 2)
-) !default;
-$header-brand-pd-medium-up: $sp-medium !default;
-$header-brand-wd-medium-up: $header-brand-wd !default;
+$header-brand-pd: $sp-xsmall;
+$header-brand-wd: 100%;
+$header-brand-ht: floor($header-brand-icon-ht + ($header-brand-pd * 2));
+$header-brand-pd-medium-up: $sp-medium;
+$header-brand-wd-medium-up: $header-brand-wd;
 $header-brand-ht-medium-up: floor(
   $header-brand-icon-ht-medium-up + ($header-brand-pd-medium-up * 2)
-) !default;
-$header-brand-bg: $c-light !default;
+);
+$header-brand-bg: $c-light;
 
-$header-nav-wd: 100% !default;
-$header-nav-ht: auto !default;
-$header-nav-bg: $c-dark !default;
-$header-nav-wd-medium-up: $header-nav-wd !default;
-$header-nav-ht-medium-up: $sp-huge !default;
-$header-nav-bg-medium-up: rgba(0, 0, 0, 0.3) !default;
-$header-nav-bg-opaque: $header-nav-bg !default;
+$header-nav-wd: 100%;
+$header-nav-ht: auto;
+$header-nav-bg: $c-dark;
+$header-nav-wd-medium-up: $header-nav-wd;
+$header-nav-ht-medium-up: $sp-huge;
+$header-nav-bg-medium-up: rgba(0, 0, 0, 0.3);
+$header-nav-bg-opaque: $header-nav-bg;
 
-$header-hamburger-wd: auto !default;
-$header-hamburger-ht: auto !default;
-$header-hamburger-pd: $sp-base $sp-xxsmall !default;
-$header-hamburger-fz: $fz-xxlarge !default;
-$header-hamburger-c: $c-dark !default;
+$header-hamburger-wd: auto;
+$header-hamburger-ht: auto;
+$header-hamburger-pd: 8px 9px;
+$header-hamburger-fz: $fz-xxlarge;
+$header-hamburger-c: $c-dark;
 
-$header-wd: 100% !default;
-$header-ht: $header-brand-ht !default;
-$header-wd-medium-up: $header-wd !default;
+$header-wd: 100%;
+$header-ht: $header-brand-ht;
+$header-wd-medium-up: $header-wd;
 $header-ht-medium-up: floor(
   $header-brand-ht-medium-up + $header-nav-ht-medium-up
-) !default;
+);
 
 // Footer
-$footer-wd: 100% !default;
-$footer-ht: auto !default;
-$footer-pd: $sp-small !default;
-$footer-wd-medium-up: $footer-wd !default;
-$footer-ht-medium-up: 230px !default;
-$footer-pd-medium-up: $sp-xxxlarge !default;
-$footer-bg: $c-light !default;
+$footer-wd: 100%;
+$footer-ht: auto;
+$footer-pd: $sp-small;
+$footer-wd-medium-up: $footer-wd;
+$footer-ht-medium-up: 230px;
+$footer-pd-medium-up: $sp-xxxlarge;
+$footer-bg: $c-light;
 
 // Category
-$category-sp: floor($header-ht + $sp-medium) !default;
-$category-sp-medium-up: floor($header-ht-medium-up + $sp-medium) !default;
+$category-sp: floor($header-ht + $sp-medium);
+$category-sp-medium-up: floor($header-ht-medium-up + $sp-medium);

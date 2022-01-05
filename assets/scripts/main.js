@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function (event) {
       event.preventDefault();
       headerNav.classList.toggle("is-small-hidden");
+      this.classList.toggle("is-active");
     },
     false
   );
@@ -44,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function () {
       removeAllIsActive(jsNavMainLink);
       addThisIsActive(this);
+      headerHamburger.classList.toggle("is-active");
     },
     false
   );
@@ -54,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function () {
       removeAllIsActive(jsNavMainLink);
       addThisIsActive(this);
+      headerHamburger.classList.toggle("is-active");
     },
     false
   );
@@ -64,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function () {
       removeAllIsActive(jsNavMainLink);
       addThisIsActive(this);
+      headerHamburger.classList.toggle("is-active");
     },
     false
   );

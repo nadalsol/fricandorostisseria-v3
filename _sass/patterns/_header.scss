@@ -1,7 +1,6 @@
 // Header
 // -----------------------------------------------------------------------------
 
-
 .header {
   @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0, 10);
 
@@ -37,7 +36,16 @@
   }
 
   &__hamburger {
-    @include positioner(absolute, $header-hamburger-wd, $header-hamburger-ht, top, $sp-small, right, $sp-xsmall, 11);
+    @include positioner(
+      absolute,
+      $header-hamburger-wd,
+      $header-hamburger-ht,
+      top,
+      18px,
+      right,
+      $sp-xsmall,
+      11
+    );
     padding: $header-hamburger-pd;
     font-size: $header-hamburger-fz;
     line-height: $lh-small;
@@ -46,5 +54,10 @@
     border: 0;
     outline: none;
     cursor: pointer;
+  }
+
+  &__hamburger.is-active {
+    border-radius: 50%;
+    background-color: $c-light-soft;
   }
 }
