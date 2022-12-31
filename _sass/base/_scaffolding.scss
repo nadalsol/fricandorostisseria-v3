@@ -3,6 +3,8 @@
 //
 // 1. Smoothly animates the transition when a user clicks a link that targets
 //    an anchored position within a scrolling box.
+// 2. Percieved performance mechanism. Gradient colors extracted with:
+//    [Online Image Color Extractor](http://www.louisbourque.ca/Color-Extractor/).
 //
 
 // Reset box-sizing
@@ -27,9 +29,12 @@ body {
   font-weight: $fw-base;
   line-height: $lh-base;
   color: $text-c;
-  background: $body-bg-c url("#{$assets-path}/#{$body-bg-img}") repeat center
-    top;
+  background-position: center top;
+  background-repeat: repeat;
   background-size: cover;
+  // 2
+  background-image: url("#{$assets-path}/#{$body-bg-img}"),
+  linear-gradient(to right, #2f2f26 0%, #29291e 50%, #352d21 75%, #3a3425 100%);
 
   @media ($medium-up) {
     background-repeat: no-repeat;
