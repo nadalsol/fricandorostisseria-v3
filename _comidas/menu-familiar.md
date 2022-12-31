@@ -10,4 +10,4 @@ order: 4
 - 2 Raciones de ensaladilla rusa
 - 2 Tarrinas de all i oli
 
-**42,00€**
+**45,00€**
