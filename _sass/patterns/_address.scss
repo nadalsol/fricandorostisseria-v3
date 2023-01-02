@@ -5,11 +5,11 @@
 .address {
   @include link($c-dark, $c-brand-primary);
 
-  > span {
-    text-decoration: underline;
+  >.icon {
+    margin-right: $sp-base;
   }
 
-  > .icon {
-    margin-left: $sp-base;
+  >span {
+    text-decoration: underline;
   }
 }
