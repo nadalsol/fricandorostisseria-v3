@@ -2,10 +2,10 @@
 // -----------------------------------------------------------------------------
 
 .category {
-  padding-top: $category-sp;
+  margin-bottom: $sp-large;
 
-  @media ($medium-up) {
-    padding-top: $category-sp-medium-up;
+  :last-child {
+    margin-bottom: 0;
   }
 
   &__content {

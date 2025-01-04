@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 
 .header {
-  @include positioner(fixed, $header-wd, $header-ht, top, 0, left, 0, 10);
+  @include positioner(sticky, $header-wd, $header-ht, top, 0, left, 0, 10);
 
   @media ($medium-up) {
     @include size($header-wd-medium-up, $header-ht-medium-up);
