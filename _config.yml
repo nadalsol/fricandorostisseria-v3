@@ -30,7 +30,6 @@ phone: 34 933 994 424
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 sass:
