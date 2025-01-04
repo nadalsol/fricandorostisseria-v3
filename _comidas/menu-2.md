@@ -9,4 +9,4 @@ order: 2
 - 1 Ración de canelones caseros (6 uni.)
 - 1 Tarrina de all i oli
 
-**20,50€**
+**21,50€**
