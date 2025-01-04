@@ -23,15 +23,10 @@
     @include size($header-nav-wd, $header-nav-ht);
     background-color: $header-nav-bg;
     overflow: hidden;
-    transition: $transition-bgc;
+    border-bottom: 1px solid $c-neutral;
 
     @media ($medium-up) {
       @include size($header-nav-wd-medium-up, $header-nav-ht-medium-up);
-      background-color: $header-nav-bg-medium-up;
-    }
-
-    &.is-opaque {
-      background-color: $header-nav-bg-opaque;
     }
   }
 

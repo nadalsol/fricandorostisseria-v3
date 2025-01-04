@@ -26,8 +26,7 @@ $c-brand-secondary: #ffb500;
 // Scaffolding
 $assets-path: "/assets";
 
-$body-bg-c: #494c5b;
-$body-bg-img: "bg-body.jpg";
+$body-bg-c: $c-dark;
 
 $text-c: $c-dark;
 
@@ -48,11 +47,8 @@ $sp-xxxlarge: floor($sp-base * 9); // 45px
 $sp-huge: floor($sp-base * 12); // 60px
 
 // Fonts
-$fonts-path: "/fonts";
-
-$ff-sans-serif: "nexa_lightregular", Arial, Helvetica, sans-serif;
-$ff-sans-serif-bold: "nexa_boldregular", Arial, Helvetica, sans-serif;
-$ff-serif: "ITC American Typewriter Bold", "Courier New", Courier, monospace;
+$ff-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-serif: "Courier New", Courier, monospace;
 $ff-base: $ff-sans-serif;
 
 $fz-base: 14px;
@@ -64,6 +60,7 @@ $fz-xlarge: 20px;
 $fz-xxlarge: 24px;
 
 $fw-base: 400;
+$fw-bold: 700;
 
 $lh-base: 1.5;
 $lh-small: 1;
@@ -85,7 +82,6 @@ $xxlarge-up: "min-width:#{$screen-xxl-min}";
 
 // Transitions
 $transition-c: color 250ms;
-$transition-bgc: background-color 250ms;
 
 // Patterns
 // -----------------------------------------------------------------------------
@@ -111,8 +107,6 @@ $header-nav-ht: auto;
 $header-nav-bg: $c-dark;
 $header-nav-wd-medium-up: $header-nav-wd;
 $header-nav-ht-medium-up: $sp-huge;
-$header-nav-bg-medium-up: rgba(0, 0, 0, 0.3);
-$header-nav-bg-opaque: $header-nav-bg;
 
 $header-hamburger-wd: auto;
 $header-hamburger-ht: auto;

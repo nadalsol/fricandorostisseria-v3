@@ -1,11 +1,10 @@
 // Main navigation
 // -----------------------------------------------------------------------------
 
-
 .nav-main {
   margin-bottom: 0;
   padding: $sp-xxsmall;
-  font-family: $ff-sans-serif-bold;
+  font-weight: $fw-bold;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   text-align: center;
@@ -32,9 +31,12 @@
 
       &::after {
         @media ($medium-up) {
-          @include positioner-center-h(80%, 2px);
           content: '';
-          bottom: -7px;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          bottom: -6px;
           border-bottom: 2px dotted $c-light;
         }
       }

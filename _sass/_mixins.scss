@@ -45,15 +45,10 @@
   height: $ht;
 }
 
-// WebKit-style focus
-//
-// 1. Default
-// 2. WebKit
-//
+// Focus
 @mixin tab-focus() {
-  outline: thin dotted; // 1
-  outline: 5px auto -webkit-focus-ring-color; // 2
-  outline-offset: -2px; // 2
+  outline-width: 2px;
+  outline-style: solid;
 }
 
 // Reset default list styles
@@ -103,29 +98,11 @@
   z-index: $po-zi;
 }
 
-// Positioner for horizontal centering
-@mixin positioner-center-h($wd, $ht) {
-  position: absolute;
-  width: $wd;
-  height: $ht;
-  left: 50%;
-  margin-left: -($wd / 2);
-}
-
 // Vertical gradient, from top to bottom
 // Permalink - use to edit and share this gradient:
 // http://colorzilla.com/gradient-editor/#222222+0,222222+10,222222+50,ffffff+51,ffffff+100&0+0,0+10,1+51
-//
-// 1. FF3.6-15
-// 2. Chrome10-25,Safari5.1-6
-// 3. W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
-// 4. IE6-9
-//
 @mixin gradient-vertical($c-start: rgba(17,17,17,0), $c-mid: rgba(17,17,17,1), $c-end: rgba(255,255,255,1), $c-start-ie: $c-dark, $c-end-ie: $c-light) {
-  background: -moz-linear-gradient(top, $c-start 0%, $c-start 10%, $c-mid 47%, $c-end 47%, $c-end 100%); // 1
-  background: -webkit-linear-gradient(top, $c-start 0%, $c-start 10%, $c-mid 47%, $c-end 47%, $c-end 100%); // 2
-  background: linear-gradient(to bottom, $c-start 0%, $c-start 10%, $c-mid 47%, $c-end 47%, $c-end 100%); // 3
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$c-start-ie}', endColorstr='#{$c-end-ie}', GradientType=0 ); // 4
+  background: linear-gradient(to bottom, $c-start 0%, $c-start 10%, $c-mid 47%, $c-end 47%, $c-end 100%);
 }
 
 // Headings
