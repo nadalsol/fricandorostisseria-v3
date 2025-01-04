@@ -129,3 +129,7 @@ $footer-wd-medium-up: $footer-wd;
 $footer-ht-medium-up: 230px;
 $footer-pd-medium-up: $sp-xxxlarge;
 $footer-bg: $c-light;
+
+// Anchor
+$anchor-sp: floor($header-ht + $sp-medium);
+$anchor-sp-medium-up: floor($header-ht-medium-up + $sp-medium);

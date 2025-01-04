@@ -49,11 +49,11 @@
     border: 0;
     outline: none;
     cursor: pointer;
-  }
 
-  &__hamburger.is-active {
-    border-radius: 50%;
-    color: $c-light;
-    background-color: $c-brand-primary;
+    &.is-active {
+      border-radius: 50%;
+      color: $c-light;
+      background-color: $c-brand-primary;
+    }
   }
 }
