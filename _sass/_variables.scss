@@ -108,9 +108,9 @@ $header-nav-bg: $c-dark;
 $header-nav-wd-medium-up: $header-nav-wd;
 $header-nav-ht-medium-up: $sp-huge;
 
-$header-hamburger-wd: auto;
-$header-hamburger-ht: auto;
-$header-hamburger-pd: 8px 9px;
+$header-hamburger-wd: 40px;
+$header-hamburger-ht: $header-hamburger-wd;
+$header-hamburger-pd: 4px 8px 8px;
 $header-hamburger-fz: $fz-xxlarge;
 $header-hamburger-c: $c-dark;
 

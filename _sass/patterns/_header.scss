@@ -53,6 +53,7 @@
 
   &__hamburger.is-active {
     border-radius: 50%;
-    background-color: $c-light-soft;
+    color: $c-light;
+    background-color: $c-brand-primary;
   }
 }
