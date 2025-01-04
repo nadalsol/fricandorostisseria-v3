@@ -1,9 +1,9 @@
 .anchor {
   position: relative;
   visibility: hidden;
-  top: $anchor-sp;
+  top: -($anchor-position);
 
   @media ($medium-up) {
-    top: $anchor-sp-medium-up;
+    top: -($anchor-position-medium-up);
   }
 }
