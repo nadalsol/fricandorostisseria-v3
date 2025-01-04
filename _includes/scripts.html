@@ -1,0 +1,45 @@
+<script>
+  (function () {
+    const headerHamburger = document.getElementById("header-hamburger");
+    const headerNav = document.getElementById("header-nav");
+    const jsNavMainLink = document.getElementsByClassName("js-nav-main-link");
+
+    /**
+     * Toggle `header-nav` visibility, via hamburger menu
+     */
+    headerHamburger.addEventListener(
+      "click",
+      function () {
+        headerNav.classList.toggle("is-small-hidden");
+        this.classList.toggle("is-active");
+      },
+      false
+    );
+
+    /**
+     * Manage `is-active` state for `js-nav-main-link` items
+     */
+    function resetActiveLinks(selector) {
+      Array.prototype.forEach.call(selector, function (el, i) {
+        el.classList.remove("is-active");
+      });
+    }
+
+    function setActiveLink(el) {
+      el.classList.add("is-active");
+      headerNav.classList.add("is-small-hidden");
+    }
+
+    Array.prototype.forEach.call(jsNavMainLink, function (link) {
+      link.addEventListener(
+        "click",
+        function () {
+          resetActiveLinks(jsNavMainLink);
+          setActiveLink(this);
+          headerHamburger.classList.toggle("is-active");
+        },
+        false
+      );
+    });
+  })();
+</script>
