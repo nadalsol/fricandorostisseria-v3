@@ -12,8 +12,8 @@ order: 7
 - Berenjena rellena de carne **4,50€**
 - Tortilla de patatas **4,50€**
 - Pimientos del piquillo rellenos de bacalao **4,50€**
-- Caracoles en salsa **6,50€**
+- Caracoles en salsa **7,00€**
 - Callos caseros **5,50€**
 - Migas de pan con ajos, panceta y pimiento verde **5,00€**
-- Fideuá con all i oli **6,00€**
-- Paella mixta **6,00€**
+- Fideuá con all i oli **6,50€**
+- Paella mixta **6,50€**
