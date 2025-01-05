@@ -15,7 +15,7 @@
   }
 
   &__link {
-    @include link($c-light, $c-brand-primary);
+    @include link($c-white, $c-brand-primary-light);
     display: block;
     padding: $sp-base;
 
@@ -27,7 +27,7 @@
     &.is-active,
     &:active {
       position: relative;
-      color: $c-brand-primary;
+      color: $c-brand-primary-light;
 
       &::after {
         @media ($medium-up) {
@@ -37,7 +37,7 @@
           height: 2px;
           left: 0;
           bottom: -6px;
-          border-bottom: 2px dotted $c-light;
+          border-bottom: 2px dotted $c-white;
         }
       }
     }

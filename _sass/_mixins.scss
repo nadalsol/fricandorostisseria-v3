@@ -101,8 +101,8 @@
 // Vertical gradient, from top to bottom
 // Permalink - use to edit and share this gradient:
 // http://colorzilla.com/gradient-editor/#222222+0,222222+10,222222+50,ffffff+51,ffffff+100&0+0,0+10,1+51
-@mixin gradient-vertical($c-start: rgba(17,17,17,0), $c-mid: rgba(17,17,17,1), $c-end: rgba(255,255,255,1), $c-start-ie: $c-dark, $c-end-ie: $c-light) {
-  background: linear-gradient(to bottom, $c-start 0%, $c-start 10%, $c-mid 47%, $c-end 47%, $c-end 100%);
+@mixin gradient-vertical($c-start: rgba($c-black, 0), $c-mid: rgba($c-black, 0), $c-end: rgba($c-white, 1)) {
+  background: linear-gradient(to bottom, $c-start 0%, $c-mid 47%, $c-end 47%, $c-end 100%);
 }
 
 // Headings

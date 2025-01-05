@@ -23,7 +23,6 @@
     @include size($header-nav-wd, $header-nav-ht);
     background-color: $header-nav-bg;
     overflow: hidden;
-    border-bottom: 1px solid $c-neutral;
 
     @media ($medium-up) {
       @include size($header-nav-wd-medium-up, $header-nav-ht-medium-up);
@@ -52,8 +51,8 @@
 
     &.is-active {
       border-radius: 50%;
-      color: $c-light;
-      background-color: $c-brand-primary;
+      color: $c-white;
+      background-color: $c-brand-primary-light;
     }
   }
 }

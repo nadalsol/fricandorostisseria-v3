@@ -14,24 +14,22 @@
 // -----------------------------------------------------------------------------
 
 // Colors
-$c-dark: #000;
-$c-dark-soft: #333;
-$c-neutral: #666;
-$c-light-soft: #f2f2f2;
-$c-light: #fff;
+$c-black: #000;
+$c-white: #fff;
 
-$c-brand-primary: #ff4e18;
+$c-brand-primary: #930028;
+$c-brand-primary-light: #ff4e18;
 $c-brand-secondary: #ffb500;
 
 // Scaffolding
 $assets-path: "/assets";
 
-$body-bg-c: $c-dark;
+$body-bg-c: $c-brand-primary;
 
-$text-c: $c-dark;
+$text-c: $c-black;
 
 $link-c: $c-brand-primary;
-$link-c-hover: lighten($link-c, 15%);
+$link-c-hover: $c-brand-primary-light;
 
 // Spacing units
 $sp-base: 5px;
@@ -100,11 +98,11 @@ $header-brand-wd-medium-up: $header-brand-wd;
 $header-brand-ht-medium-up: floor(
   $header-brand-icon-ht-medium-up + ($header-brand-pd-medium-up * 2)
 );
-$header-brand-bg: $c-light;
+$header-brand-bg: $c-white;
 
 $header-nav-wd: 100%;
 $header-nav-ht: auto;
-$header-nav-bg: $c-dark;
+$header-nav-bg: $c-black;
 $header-nav-wd-medium-up: $header-nav-wd;
 $header-nav-ht-medium-up: $sp-huge;
 
@@ -112,7 +110,7 @@ $header-hamburger-wd: 40px;
 $header-hamburger-ht: $header-hamburger-wd;
 $header-hamburger-pd: 4px 8px 8px;
 $header-hamburger-fz: $fz-xxlarge;
-$header-hamburger-c: $c-dark;
+$header-hamburger-c: $c-black;
 
 $header-wd: 100%;
 $header-ht: $header-brand-ht;
@@ -128,7 +126,7 @@ $footer-pd: $sp-small;
 $footer-wd-medium-up: $footer-wd;
 $footer-ht-medium-up: 230px;
 $footer-pd-medium-up: $sp-xxxlarge;
-$footer-bg: $c-light;
+$footer-bg: $c-white;
 
 // Anchor
 $anchor-position: floor($header-ht + $sp-medium);

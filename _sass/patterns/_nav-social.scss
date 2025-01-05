@@ -12,7 +12,7 @@
   }
 
   a {
-    @include link($c-dark, $c-brand-primary);
+    @include link($c-black, $c-brand-primary-light);
     display: block;
   }
 }

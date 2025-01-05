@@ -38,31 +38,31 @@ h6 {
   line-height: $lh-base;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: $c-light;
+  color: $c-white;
 }
 
 h1 {
-  @include heading($fz-xlarge, $c-dark);
+  @include heading($fz-xlarge, $c-black);
 }
 
 h2 {
-  @include heading($fz-large, $c-dark);
+  @include heading($fz-large, $c-black);
 }
 
 h3 {
-  @include heading($fz-medium, $c-dark);
+  @include heading($fz-medium, $c-black);
 }
 
 h4 {
-  @include heading($fz-base, $c-light);
+  @include heading($fz-base, $c-white);
 }
 
 h5 {
-  @include heading($fz-small, $c-light);
+  @include heading($fz-small, $c-white);
 }
 
 h6 {
-  @include heading($fz-xsmall, $c-light);
+  @include heading($fz-xsmall, $c-white);
 }
 
 // Images

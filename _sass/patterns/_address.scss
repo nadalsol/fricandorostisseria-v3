@@ -2,11 +2,11 @@
 // -----------------------------------------------------------------------------
 
 .address {
-  @include link($c-dark, $c-brand-primary);
+  @include link($c-black, $c-brand-primary-light);
 
   > .icon {
     margin-right: $sp-base;
-    color: $c-brand-primary;
+    color: $c-brand-primary-light;
   }
 
   > span {
