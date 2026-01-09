@@ -4,6 +4,7 @@
 .footer {
   @include size($footer-wd, $footer-ht);
   padding: $footer-pd;
+  font-size: $fz-medium;
   font-weight: $fw-bold;
   background-color: $footer-bg;
 

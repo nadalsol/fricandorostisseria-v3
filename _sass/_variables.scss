@@ -49,13 +49,13 @@ $ff-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $ff-serif: "Courier New", Courier, monospace;
 $ff-base: $ff-sans-serif;
 
-$fz-base: 14px;
-$fz-xsmall: 11px;
-$fz-small: 12px;
-$fz-medium: 16px;
-$fz-large: 18px;
-$fz-xlarge: 20px;
-$fz-xxlarge: 24px;
+$fz-base: 1rem; // 16px
+$fz-xsmall: 0.6875rem; // 11px
+$fz-small: 0.75rem; // 12px
+$fz-medium: 0.875rem; // 14px
+$fz-large: 1.125rem; // 18px
+$fz-xlarge: 1.25rem; // 20px
+$fz-xxlarge: 1.5rem; // 24px
 
 $fw-base: 400;
 $fw-bold: 700;
