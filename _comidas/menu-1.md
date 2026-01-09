@@ -8,4 +8,4 @@ order: 1
 - 1 Ración de patatas "al caliu"
 - 1 Tarrina de all i oli
 
-**15,00€**
+**16,00€**

@@ -6,6 +6,6 @@ order: 5
 
 - Esqueixada de bacalao **5,00€**
 - Escalivada **5,00€**
-- Ensaladilla rusa **4,50€**
-- Ensalada de pasta **4,50€**
+- Ensaladilla rusa **5,00€**
+- Ensalada de pasta **5,00€**
 - Ensalada verde (con atún, huevo duro) **5,00€**
