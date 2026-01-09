@@ -1,17 +1,29 @@
 <script>
   (function () {
-    const headerHamburger = document.getElementById("header-hamburger");
-    const headerNav = document.getElementById("header-nav");
-    const jsNavMainLink = document.getElementsByClassName("js-nav-main-link");
+    const headerHamburger = document.getElementById('header-hamburger');
+    const headerNav = document.getElementById('header-nav');
+    const jsNavMainLink = document.getElementsByClassName('js-nav-main-link');
+    const headerHamburgerCollapsedAriaLabel = headerHamburger.getAttribute('aria-label');
+    const headerHamburgerExpandedAriaLabel = 'Cerrar menú de navegación';
 
     /**
      * Toggle `header-nav` visibility, via hamburger menu
      */
     headerHamburger.addEventListener(
-      "click",
+      'click',
       function () {
-        headerNav.classList.toggle("is-small-hidden");
-        this.classList.toggle("is-active");
+        if (this.getAttribute('aria-expanded') === 'false') {
+          this.setAttribute('aria-expanded', 'true');
+          this.setAttribute('aria-label', headerHamburgerExpandedAriaLabel);
+          this.classList.add('is-active');
+          headerNav.classList.remove('is-small-hidden');
+        }
+        else {
+          this.setAttribute('aria-expanded', 'false');
+          this.setAttribute('aria-label', headerHamburgerCollapsedAriaLabel);
+          this.classList.remove('is-active');
+          headerNav.classList.add('is-small-hidden');
+        }
       },
       false
     );
@@ -21,22 +33,24 @@
      */
     function resetActiveLinks(selector) {
       Array.prototype.forEach.call(selector, function (el, i) {
-        el.classList.remove("is-active");
+        el.classList.remove('is-active');
       });
     }
 
     function setActiveLink(el) {
-      el.classList.add("is-active");
-      headerNav.classList.add("is-small-hidden");
+      el.classList.add('is-active');
+      headerNav.classList.add('is-small-hidden');
     }
 
     Array.prototype.forEach.call(jsNavMainLink, function (link) {
       link.addEventListener(
-        "click",
+        'click',
         function () {
           resetActiveLinks(jsNavMainLink);
           setActiveLink(this);
-          headerHamburger.classList.toggle("is-active");
+          headerHamburger.setAttribute('aria-expanded', 'false');
+          headerHamburger.setAttribute('aria-label', headerHamburgerCollapsedAriaLabel);
+          headerHamburger.classList.remove('is-active');
         },
         false
       );

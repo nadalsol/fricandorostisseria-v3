@@ -71,6 +71,9 @@ http://www.yoursitename.com/
 
 ### Deploy DatoCMS changes
 
+> [!WARNING]
+> Using the "Deploy manual changes" approach atm!
+
 1. Set this setting under yout "Netlify > Site settings > Build settings > Build command": `bundle exec dato dump --token=SITE_READONLY_TOKEN && jekyll build`. Replace the `SITE_READ_ONLY_TOKEN` string with the actual token (you can find it your DatoCMS Admin area).
 2. Follow [point 4](#4-use-datocms-to-publish-content) and [point 5](#5-manage-datocms-records) below.
 
@@ -106,6 +109,9 @@ Netlify's default Ruby version is `2.1.2` but you can pick a different version b
 
 ## 4. Use DatoCMS to publish content
 
+> [!WARNING]
+> Using the "Deploy manual changes" approach atm!
+
 The deploy process described above can be fine, but it certainly cannot be done if the person in charge of updating catalog is not a programmer and or is not comfortable with terminal.
 
 To solve this issue, just access your DatoCMS administrative area to populate your content:
@@ -113,6 +119,9 @@ To solve this issue, just access your DatoCMS administrative area to populate yo
 https://yoursitename.admin.datocms.com/
 
 ## 5. Manage DatoCMS records
+
+> [!WARNING]
+> Using the "Deploy manual changes" approach atm!
 
 If you want to get rid of the Markdown files in the Jekyll project and integrate the data from DatoCMS instead, just use the [dato gem](https://github.com/datocms/ruby-datocms-client/). This gem let's you programmatically read/create/edit/destroy DatoCMS records.
 

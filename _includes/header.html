@@ -1,5 +1,4 @@
-<header id="header" class="header" role="banner">
-
+<header id="header" class="header">
   <div class="header__brand">
     <div class="wrapper">
       <h1 class="heading-brand">
@@ -10,14 +9,22 @@
     </div>
   </div>
 
-  <nav id="header-nav" class="header__nav is-small-hidden">
+  <button
+    id="header-hamburger"
+    class="header__hamburger is-medium-hidden"
+    aria-expanded="false"
+    aria-label="Abrir menú de navegación"
+    aria-controls="header-nav"
+  >
+    <span aria-hidden="true">&#9776;</span>
+  </button>
+
+  <nav
+    id="header-nav"
+    class="header__nav is-small-hidden"
+  >
     <div class="wrapper">
       {% include nav-main.html %}
     </div>
   </nav>
-
-  <button id="header-hamburger" class="header__hamburger is-medium-hidden">
-    &#9776;
-  </button>
-
 </header>

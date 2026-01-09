@@ -1,9 +1,22 @@
 // Main navigation
 // -----------------------------------------------------------------------------
 
+@mixin triangle-shape($color) {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  bottom: 4px;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid $color;
+}
+
 .nav-main {
-  margin-bottom: 0;
-  padding: $sp-xxsmall;
+  margin: 0;
+  padding: 0;
   font-weight: $fw-bold;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -11,34 +24,45 @@
 
   @media ($medium-up) {
     @include list-inline($sp-xsmall, $sp-xsmall);
-    padding: $sp-small;
   }
 
   &__link {
-    @include link($c-white, $c-brand-primary-light);
+    @include link($c-white, $c-white);
+    position: relative;
     display: block;
-    padding: $sp-base;
+    padding: $sp-xsmall;
 
     @media ($medium-up) {
-      display: inline;
-      padding: 0;
+      display: flex;
+      align-items: center;
+      padding: 0 $sp-small;
+      line-height: $header-nav-ht-medium-up;
+
+      &:hover::before {
+        @include triangle-shape($c-white);
+      }
     }
 
-    &.is-active,
-    &:active {
-      position: relative;
-      color: $c-brand-primary-light;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: 0;
+      background-color: $c-white;
+    }
+
+    &.is-active {
+      pointer-events: none;
+      color: $c-brand-secondary;
+
+      &::before {
+        @include triangle-shape($c-brand-secondary);
+      }
 
       &::after {
-        @media ($medium-up) {
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 2px;
-          left: 0;
-          bottom: -6px;
-          border-bottom: 2px dotted $c-white;
-        }
+        background-color: $c-brand-secondary;
       }
     }
   }

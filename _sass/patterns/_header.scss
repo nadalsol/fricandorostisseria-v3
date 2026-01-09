@@ -22,7 +22,6 @@
   &__nav {
     @include size($header-nav-wd, $header-nav-ht);
     background-color: $header-nav-bg;
-    overflow: hidden;
 
     @media ($medium-up) {
       @include size($header-nav-wd-medium-up, $header-nav-ht-medium-up);
@@ -46,13 +45,12 @@
     color: $header-hamburger-c;
     background: none;
     border: 0;
-    outline: none;
     cursor: pointer;
 
     &.is-active {
       border-radius: 50%;
       color: $c-white;
-      background-color: $c-brand-primary-light;
+      background-color: $c-brand-primary;
     }
   }
 }
