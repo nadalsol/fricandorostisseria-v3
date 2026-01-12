@@ -1,9 +1,7 @@
 .anchor {
-  position: relative;
-  visibility: hidden;
-  top: -($anchor-position);
+  scroll-margin-top: $anchor-position;
 
   @media ($medium-up) {
-    top: -($anchor-position-medium-up);
+    scroll-margin-top: $anchor-position-medium-up;
   }
 }
